@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductSpecs matches snapshot 1`] = `
+<div>
+  <ul
+    class="MuiList-root MuiList-padding css-b7dj7n-MuiList-root"
+  >
+    <li
+      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
+    >
+      <div
+        class="MuiListItemText-root MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-rizt0-MuiTypography-root"
+        >
+          Available Formats
+        </span>
+        <p
+          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+        >
+          FBX, OBJ, MAX
+        </p>
+      </div>
+    </li>
+    <hr
+      class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+    />
+    <li
+      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
+    >
+      <div
+        class="MuiListItemText-root MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-rizt0-MuiTypography-root"
+        >
+          Polygons
+        </span>
+        <p
+          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+        >
+          24k
+        </p>
+      </div>
+    </li>
+    <hr
+      class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+    />
+    <li
+      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
+    >
+      <div
+        class="MuiListItemText-root MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-rizt0-MuiTypography-root"
+        >
+          Textures
+        </span>
+        <p
+          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+        >
+          4K PBR
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
