@@ -7,6 +7,21 @@ describe('Header', () => {
     return render(<Header {...props} />);
   };
 
+  it('matches snapshot with default props', () => {
+    const { container } = renderHeader();
+    expect(container).toMatchSnapshot();
+  });
+
+  it('matches snapshot with cart items', () => {
+    const { container } = renderHeader({ cartItemsCount: 5 });
+    expect(container).toMatchSnapshot();
+  });
+
+  it('matches snapshot with max cart items', () => {
+    const { container } = renderHeader({ cartItemsCount: 100 });
+    expect(container).toMatchSnapshot();
+  });
+
   it('renders marketplace title', () => {
     renderHeader();
     const title = screen.getByText('Marketplace');
