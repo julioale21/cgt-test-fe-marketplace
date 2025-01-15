@@ -4,11 +4,11 @@ export const theme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: '#1976d2',
+      main: '#1976d2'
     },
     secondary: {
-      main: '#dc004e',
-    },
+      main: '#dc004e'
+    }
   },
   typography: {
     fontFamily: [
@@ -18,7 +18,7 @@ export const theme = createTheme({
       'Roboto',
       '"Helvetica Neue"',
       'Arial',
-      'sans-serif',
-    ].join(','),
-  },
+      'sans-serif'
+    ].join(',')
+  }
 });

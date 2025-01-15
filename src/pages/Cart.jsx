@@ -6,7 +6,7 @@ const Cart = () => {
     <div>
       Are you ready to purchase these?
       <ul>
-        {cartItems.map(cartItem => (
+        {cartItems.map((cartItem) => (
           <li key={cartItem}>{cartItem}</li>
         ))}
       </ul>
