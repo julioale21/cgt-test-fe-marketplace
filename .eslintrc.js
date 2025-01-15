@@ -23,7 +23,7 @@ module.exports = {
     'react/prop-types': 'off',
     'prettier/prettier': 'error',
     'no-unused-vars': 'warn',
-    'no-console': ['warn', { allow: ['warn', 'error'] }],
+    'no-console': 'off',
   },
   settings: {
     react: {
