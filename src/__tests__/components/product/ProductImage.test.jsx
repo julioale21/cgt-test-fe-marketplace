@@ -1,12 +1,16 @@
 import { render } from '@testing-library/react';
 import { ProductImage } from '../../../components';
 
-
 describe('ProductImage', () => {
   const mockProps = {
     image: 'test-image.jpg',
     name: 'Test Product'
   };
+
+  it('matches snapshot', () => {
+    const { container } = render(<ProductImage {...mockProps} />);
+    expect(container).toMatchSnapshot();
+  });
 
   it('renders the image with correct src and alt', () => {
     const { getByRole } = render(<ProductImage {...mockProps} />);
