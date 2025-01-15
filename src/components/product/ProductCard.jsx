@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Card, CardActions, CardContent, CardMedia, Grid, Typography } from '@mui/material';
+import { OutlinedButton } from '../buttons/OutlinedButton';
+import { ContainedButton } from '../buttons/ContainedButton';
 
-import { OutlinedButton } from './buttons/OutlinedButton';
-import { ContainedButton } from './buttons/ContainedButton';
+
 
 const ProductCard = ({ product }) => {
   if (!product) {

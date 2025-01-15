@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import { ProductList } from '../../components/ProductList';
-import { products } from '../../constants/products';
+import { products } from '../../../constants/products';
+import { ProductList } from '../../../components';
 
 const renderProductList = (props = {}) => {
   return render(
