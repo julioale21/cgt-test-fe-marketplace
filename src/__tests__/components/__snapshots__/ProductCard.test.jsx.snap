@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCard matches snapshot 1`] = `
+<div>
+  <div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-em32m3-MuiPaper-root-MuiCard-root"
+        style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+      >
+        <img
+          alt="3D Modern Chair"
+          class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-qapfwi-MuiCardMedia-root"
+          height="200"
+          src="/path/to/image.jpg"
+        />
+        <div
+          class="MuiCardContent-root css-x4lmbv-MuiCardContent-root"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+          >
+            3D Modern Chair
+          </h2>
+          <p
+            class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+          >
+            High-quality 3D model of a modern minimalist chair
+          </p>
+          <h6
+            class="MuiTypography-root MuiTypography-h6 css-11ary1m-MuiTypography-root"
+          >
+            $
+            149.99
+          </h6>
+          <p
+            class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+          >
+            Rating: 
+            4.5
+            /5
+          </p>
+          <p
+            class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+          >
+            Polygons: 
+            24k
+          </p>
+          <p
+            class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+          >
+            Textures: 
+            4K PBR
+          </p>
+          <p
+            class="MuiTypography-root MuiTypography-body2 css-tmy7vb-MuiTypography-root"
+          >
+            Formats: 
+            FBX, OBJ, MAX
+          </p>
+        </div>
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-ksj18d-MuiCardActions-root"
+        >
+          <a
+            href="/products/1"
+          >
+            View Details
+          </a>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-uwf23-MuiButtonBase-root-MuiButton-root"
+            id=":r1:"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium css-1sh91j5-MuiButton-startIcon"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wdc28j-MuiSvgIcon-root"
+                data-testid="ShoppingCartIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2M1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2"
+                />
+              </svg>
+            </span>
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductCard matches snapshot when no product is provided 1`] = `<div />`;
