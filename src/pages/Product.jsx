@@ -25,7 +25,7 @@ const Product = () => {
           <div>
             <h1>Product A</h1>
             <p>Price: 10 USD</p>
-            <button type="button" onClick={() => console.warn('Not implemented!')}>
+            <button type="button" onClick={() => console.log('Not implemented!')}>
               Add to cart
             </button>
             <div>
