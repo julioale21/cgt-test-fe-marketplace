@@ -1,9 +1,12 @@
 import { Outlet } from 'react-router-dom';
 import { Header } from '../components/shared/Header';
 import { Box } from '@mui/material';
+import { useCart } from '../hooks/useCart';
 
 export function Layout() {
-  const cartItemsCount = 3;
+  const { items } = useCart();
+
+  const cartItemsCount = items.reduce((total, item) => total + item.quantity, 0);
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
