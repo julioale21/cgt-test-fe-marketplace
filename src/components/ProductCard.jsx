@@ -83,7 +83,7 @@ ProductCard.propTypes = {
     format: PropTypes.arrayOf(PropTypes.string).isRequired,
     polygons: PropTypes.string.isRequired,
     textures: PropTypes.string.isRequired
-  }).isRequired
+  })
 };
 
 export { ProductCard };

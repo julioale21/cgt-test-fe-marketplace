@@ -31,7 +31,11 @@ ProductList.propTypes = {
       polygons: PropTypes.string.isRequired,
       textures: PropTypes.string.isRequired
     })
-  ).isRequired
+  )
+};
+
+ProductList.defaultProps = {
+  products: []
 };
 
 export { ProductList };
