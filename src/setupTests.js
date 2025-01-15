@@ -1,4 +1,6 @@
-// src/setupTests.js
+
+import '@testing-library/jest-dom';
+import { act } from 'react';
 
 jest.mock('react-router-dom', () => {
   const React = require('react');
@@ -24,13 +26,15 @@ jest.mock('react-router-dom', () => {
   };
 });
 
-import '@testing-library/jest-dom';
+global.act = act;
 
 const originalError = console.error;
 console.error = (...args) => {
   if (
     /Warning: Failed prop type/.test(args[0]) ||
-    /Warning: Function components cannot be given refs/.test(args[0])
+    /Warning: Function components cannot be given refs/.test(args[0]) ||
+    /Warning: ReactDOM/.test(args[0]) ||
+    /Warning: `ReactDOMTestUtils.act`/.test(args[0])
   ) {
     return;
   }

@@ -1,22 +1,21 @@
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import { Header } from '../components/shared/Header';
+import { Box } from '@mui/material';
 
 export function Layout() {
+  const cartItemsCount = 3;
+
   return (
-    <div>
-      <header>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/cart">Cart</Link>
-        </nav>
-      </header>
+    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <Header cartItemsCount={cartItemsCount} />
 
-      <main>
+      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <Outlet />
-      </main>
+      </Box>
 
-      <footer>
+      <Box component="footer" sx={{ p: 2, textAlign: 'center', mt: 'auto' }}>
         <p>© 2025</p>
-      </footer>
-    </div>
+      </Box>
+    </Box>
   );
 }
