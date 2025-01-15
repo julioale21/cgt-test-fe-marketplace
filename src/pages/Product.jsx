@@ -5,8 +5,6 @@ import pictureB from '../assets/b.jpg';
 const Product = () => {
   const { productId } = useParams();
 
-  console.log('productId', productId);
-
   const renderProduct = () => {
     switch (productId) {
       case 'b':
