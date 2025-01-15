@@ -14,7 +14,7 @@ export const CustomAlert = ({
       open={open}
       autoHideDuration={autoHideDuration}
       onClose={onClose}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+      anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
     >
       <Alert onClose={onClose} severity={severity} variant="filled" sx={{ width: '100%' }}>
         {message}
