@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const ProductSpecs = ({ format, polygons, textures }) => (
   <List>
     <ListItem>
-      <ListItemText primary="Available Formats" secondary={format.join(', ')} />
+      <ListItemText primary="Available Formats" secondary={format?.join(', ')} />
     </ListItem>
     <Divider />
     <ListItem>
