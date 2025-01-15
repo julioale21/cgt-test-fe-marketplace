@@ -1,6 +1,9 @@
 
 import '@testing-library/jest-dom';
 import { act } from 'react';
+import { render } from '@testing-library/react';
+import { CartProvider } from './context/cart/cartProvider';
+
 
 jest.mock('react-router-dom', () => {
   const React = require('react');
@@ -25,6 +28,19 @@ jest.mock('react-router-dom', () => {
     Link: MockLink
   };
 });
+
+const customRender = (ui, options = {}) =>
+  render(ui, {
+    wrapper: ({ children }) => (
+      <CartProvider>
+        {children}
+      </CartProvider>
+    ),
+    ...options
+  });
+
+export * from '@testing-library/react';
+export { customRender as render };
 
 global.act = act;
 

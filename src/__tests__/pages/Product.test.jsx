@@ -3,15 +3,18 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import { products } from '../../constants/products';
 import Product from '../../pages/Product';
+import { CartProvider } from '../../context/cart/cartProvider';
 
 describe('Product', () => {
   const renderWithRouter = (productId = '1') => {
     return render(
-      <MemoryRouter initialEntries={[`/product/${productId}`]}>
-        <Routes>
-          <Route path="/product/:productId" element={<Product />} />
-        </Routes>
-      </MemoryRouter>
+      <CartProvider>
+        <MemoryRouter initialEntries={[`/product/${productId}`]}>
+          <Routes>
+            <Route path="/product/:productId" element={<Product />} />
+          </Routes>
+        </MemoryRouter>
+      </CartProvider>
     );
   };
 
@@ -55,13 +58,11 @@ describe('Product', () => {
   });
 
   it('shows add to cart button and handles click', () => {
-    const consoleSpy = jest.spyOn(console, 'warn').mockImplementation(() => {});
     renderWithRouter('1');
 
     const addToCartButton = screen.getByRole('button', { name: /add to cart/i });
     fireEvent.click(addToCartButton);
 
-    expect(consoleSpy).toHaveBeenCalledWith('Not implemented yet!');
-    consoleSpy.mockRestore();
+    expect(screen.getByText(`${testProduct.name} added to cart!`)).toBeInTheDocument();
   });
 });
