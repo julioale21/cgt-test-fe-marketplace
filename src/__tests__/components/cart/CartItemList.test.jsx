@@ -4,8 +4,14 @@ import userEvent from '@testing-library/user-event';
 import { CartItemList } from '../../../components';
 
 jest.mock('@mui/material', () => ({
+  ...jest.requireActual('@mui/material'),
   Stack: ({ children, spacing }) => (
     <div data-testid="mui-stack" className="MuiStack-root" data-spacing={spacing}>
+      {children}
+    </div>
+  ),
+  Box: ({ children, ...props }) => (
+    <div {...props} className="MuiBox-root">
       {children}
     </div>
   )
@@ -63,24 +69,19 @@ describe('CartItemList', () => {
 
   it('should match snapshot', () => {
     const props = { ...defaultProps };
-
     const { container } = render(<CartItemList {...props} />);
-
     expect(container).toMatchSnapshot();
   });
 
   it('should render correct number of CartItem components', () => {
     const props = { ...defaultProps };
-
     render(<CartItemList {...props} />);
-
     const cartItems = screen.getAllByTestId(/^cart-item-/);
     expect(cartItems).toHaveLength(mockItems.length);
   });
 
   it('should render items in correct order with all required elements', () => {
     const props = { ...defaultProps };
-
     render(<CartItemList {...props} />);
 
     const items = screen.getAllByTestId(/^cart-item-/);
@@ -130,11 +131,8 @@ describe('CartItemList', () => {
 
   it('should handle empty items array', () => {
     const props = { ...defaultProps, items: [] };
-
     render(<CartItemList {...props} />);
-
-    const stack = screen.getByTestId('mui-stack');
-    expect(stack).toBeInTheDocument();
-    expect(stack.children).toHaveLength(0);
+    const cartItems = screen.queryAllByTestId(/^cart-item-/);
+    expect(cartItems).toHaveLength(0);
   });
 });

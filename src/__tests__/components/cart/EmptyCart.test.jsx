@@ -37,7 +37,7 @@ describe('EmptyCart', () => {
 
     render(<EmptyCart {...props} />);
 
-    expect(screen.getByText('Continue Shopping')).toBeInTheDocument();
+    expect(screen.getByText('Start Shopping')).toBeInTheDocument();
   });
 
   it('should render back arrow icon in button', () => {
@@ -48,12 +48,12 @@ describe('EmptyCart', () => {
     expect(screen.getByTestId('ArrowBackIcon')).toBeInTheDocument();
   });
 
-  it('should call onContinueShopping when button is clicked', async () => {
+  it('should call start shopping when button is clicked', async () => {
     const props = { ...defaultProps };
     const user = userEvent.setup();
 
     render(<EmptyCart {...props} />);
-    await user.click(screen.getByText('Continue Shopping'));
+    await user.click(screen.getByText('Start Shopping'));
 
     expect(props.onContinueShopping).toHaveBeenCalledTimes(1);
   });

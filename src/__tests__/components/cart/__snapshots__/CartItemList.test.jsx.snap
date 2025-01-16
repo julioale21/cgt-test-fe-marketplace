@@ -3,9 +3,8 @@
 exports[`CartItemList should match snapshot 1`] = `
 <div>
   <div
-    class="MuiStack-root"
-    data-spacing="2"
-    data-testid="mui-stack"
+    class="MuiBox-root"
+    sx="[object Object]"
   >
     <div
       class="MuiPaper-root"

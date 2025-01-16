@@ -1,42 +1,110 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box, Typography, IconButton, Paper } from '@mui/material';
+import { Box, Typography, IconButton } from '@mui/material';
 import { Add as AddIcon, Remove as RemoveIcon, Delete as DeleteIcon } from '@mui/icons-material';
 
 const CartItem = ({ item, onIncrement, onDecrement, onRemove }) => (
-  <Paper elevation={1} sx={{ p: 2 }}>
-    <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+  <Box
+    sx={{
+      py: 3,
+      display: 'flex',
+      gap: 3
+    }}
+  >
+    <Box
+      component="img"
+      src={item.image}
+      alt={item.name}
+      sx={{
+        width: '80px',
+        height: '80px',
+        objectFit: 'cover',
+        borderRadius: 2
+      }}
+    />
+
+    <Box
+      sx={{
+        flexGrow: 1,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between'
+      }}
+    >
       <Box
-        component="img"
-        src={item.image}
-        alt={item.name}
         sx={{
-          width: 80,
-          height: 80,
-          objectFit: 'cover',
-          borderRadius: 1
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'flex-start'
         }}
-      />
-      <Box sx={{ flexGrow: 1 }}>
-        <Typography variant="subtitle1">{item.name}</Typography>
-        <Typography variant="body2" color="text.secondary">
-          ${item.price.toFixed(2)}
-        </Typography>
-      </Box>
-      <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-        <IconButton size="small" onClick={onDecrement}>
-          <RemoveIcon />
-        </IconButton>
-        <Typography sx={{ minWidth: 32, textAlign: 'center' }}>{item.quantity}</Typography>
-        <IconButton size="small" onClick={onIncrement}>
-          <AddIcon />
-        </IconButton>
-        <IconButton size="small" color="error" onClick={onRemove}>
-          <DeleteIcon />
-        </IconButton>
+      >
+        <Box>
+          <Typography variant="h6" sx={{ fontWeight: 500 }}>
+            {item.name}
+          </Typography>
+          <Typography variant="h5" sx={{ mt: 1, fontWeight: 500 }}>
+            ${item.price.toFixed(2)}
+          </Typography>
+        </Box>
+
+        <Box
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: 1
+          }}
+        >
+          <IconButton
+            onClick={onDecrement}
+            size="small"
+            sx={{
+              color: 'action.active',
+              '&:hover': {
+                color: 'primary.main',
+                bgcolor: 'primary.lighter'
+              }
+            }}
+          >
+            <RemoveIcon />
+          </IconButton>
+          <Typography
+            sx={{
+              minWidth: '32px',
+              textAlign: 'center'
+            }}
+          >
+            {item.quantity}
+          </Typography>
+          <IconButton
+            onClick={onIncrement}
+            size="small"
+            sx={{
+              color: 'action.active',
+              '&:hover': {
+                color: 'primary.main',
+                bgcolor: 'primary.lighter'
+              }
+            }}
+          >
+            <AddIcon />
+          </IconButton>
+          <IconButton
+            onClick={onRemove}
+            size="small"
+            color="error"
+            sx={{
+              ml: 2,
+              '&:hover': {
+                bgcolor: 'error.lighter'
+              }
+            }}
+          >
+            <DeleteIcon />
+          </IconButton>
+        </Box>
       </Box>
     </Box>
-  </Paper>
+  </Box>
 );
 
 CartItem.propTypes = {

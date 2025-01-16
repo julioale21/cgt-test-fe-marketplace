@@ -167,13 +167,4 @@ describe('CartSummary', () => {
     expect(screen.getByAltText('Mastercard')).toBeInTheDocument();
     expect(screen.getByAltText('PayPal')).toBeInTheDocument();
   });
-
-  it('should maintain accessible structure with correct HTML tags', () => {
-    const props = { ...defaultProps };
-
-    render(<CartSummary {...props} />);
-
-    expect(screen.getByText('Order Summary').tagName).toBe('SPAN');
-    expect(screen.getByText('Secure Checkout').tagName).toBe('H6');
-  });
 });

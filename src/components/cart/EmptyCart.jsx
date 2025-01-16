@@ -12,7 +12,7 @@ const EmptyCart = ({ onContinueShopping }) => (
         Your cart is empty
       </Typography>
       <OutlinedButton startIcon={<ArrowBackIcon />} onClick={onContinueShopping} sx={{ mt: 2 }}>
-        Continue Shopping
+        Start Shopping
       </OutlinedButton>
     </CardContent>
   </Card>
