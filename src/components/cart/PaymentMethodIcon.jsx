@@ -29,11 +29,8 @@ const PaymentMethodIcon = ({ src, alt, size = 60 }) => {
 PaymentMethodIcon.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
-  size: PropTypes.number
-};
-
-PaymentMethodIcon.defaultProps = {
-  size: 60
+  width: PropTypes.string,
+  height: PropTypes.string
 };
 
 export { PaymentMethodIcon };
