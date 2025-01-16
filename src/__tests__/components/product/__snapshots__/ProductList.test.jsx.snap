@@ -35,7 +35,7 @@ exports[`ProductList should match snapshot with products 1`] = `
                 3D Modern Chair
               </h2>
               <p
-                class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 css-nlxrg8-MuiTypography-root"
               >
                 High-quality 3D model of a modern minimalist chair, perfect for architectural visualization.
               </p>
@@ -146,7 +146,7 @@ exports[`ProductList should match snapshot with products 1`] = `
                 Sci-Fi Spaceship
               </h2>
               <p
-                class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 css-nlxrg8-MuiTypography-root"
               >
                 Detailed sci-fi spacecraft model with interior details and animated components.
               </p>
@@ -257,7 +257,7 @@ exports[`ProductList should match snapshot with products 1`] = `
                 Medieval Castle
               </h2>
               <p
-                class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 css-nlxrg8-MuiTypography-root"
               >
                 Historically accurate medieval castle with full interior and exterior details.
               </p>
@@ -368,7 +368,7 @@ exports[`ProductList should match snapshot with products 1`] = `
                 Tropical Plant Pack
               </h2>
               <p
-                class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 css-nlxrg8-MuiTypography-root"
               >
                 Collection of 20 high-quality tropical plants and trees with seasonal variations.
               </p>
@@ -479,7 +479,7 @@ exports[`ProductList should match snapshot with products 1`] = `
                 Sports Car Concept
               </h2>
               <p
-                class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 css-nlxrg8-MuiTypography-root"
               >
                 High-performance sports car with detailed interior and customizable parts.
               </p>
@@ -590,7 +590,7 @@ exports[`ProductList should match snapshot with products 1`] = `
                 Game Character Hero
               </h2>
               <p
-                class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 css-nlxrg8-MuiTypography-root"
               >
                 Fully rigged game character with multiple animations and customizable outfits.
               </p>
@@ -701,7 +701,7 @@ exports[`ProductList should match snapshot with products 1`] = `
                 Modern Kitchen Set
               </h2>
               <p
-                class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 css-nlxrg8-MuiTypography-root"
               >
                 Complete modern kitchen set with appliances and customizable materials.
               </p>
@@ -812,7 +812,7 @@ exports[`ProductList should match snapshot with products 1`] = `
                 Industrial Robot Arm
               </h2>
               <p
-                class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 css-nlxrg8-MuiTypography-root"
               >
                 Detailed industrial robot arm with fully animated joints and control rig.
               </p>

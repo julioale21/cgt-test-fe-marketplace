@@ -30,7 +30,7 @@ exports[`ProductCard should match snapshot 1`] = `
               3D Modern Chair
             </h2>
             <p
-              class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-body2 css-nlxrg8-MuiTypography-root"
             >
               High-quality 3D model of a modern minimalist chair
             </p>
