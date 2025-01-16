@@ -11,8 +11,26 @@ const Product = () => {
 
   if (!product) {
     return (
-      <Container sx={{ py: 4 }}>
-        <Typography variant="h4" align="center">
+      <Container
+        maxWidth={false}
+        sx={{
+          p: { xs: 2, md: 4 },
+          maxWidth: '1400px !important',
+          mx: 'auto',
+          minHeight: '80vh',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}
+      >
+        <Typography
+          variant="h4"
+          align="center"
+          color="text.secondary"
+          sx={{
+            fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem' }
+          }}
+        >
           Product not found
         </Typography>
       </Container>
@@ -27,13 +45,35 @@ const Product = () => {
   };
 
   return (
-    <Container sx={{ py: 4 }}>
-      <Grid container spacing={4}>
+    <Container
+      maxWidth={false}
+      sx={{
+        p: { xs: 2, md: 4 },
+        maxWidth: '1400px !important',
+        mx: 'auto'
+      }}
+    >
+      <Grid
+        container
+        spacing={{ xs: 2, md: 4 }}
+        sx={{
+          minHeight: '80vh',
+          alignItems: 'flex-start'
+        }}
+      >
         <Grid item xs={12} md={6}>
           <ProductImage image={product.image} name={product.name} />
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          sx={{
+            display: 'flex',
+            flexDirection: 'column'
+          }}
+        >
           <ProductDetails product={product} isInCart={isInCart} onAddToCart={onAddToCart} />
         </Grid>
       </Grid>

@@ -3,10 +3,10 @@
 exports[`Product should match snapshot with invalid product 1`] = `
 <div>
   <div
-    class="MuiContainer-root MuiContainer-maxWidthLg css-xsov46-MuiContainer-root"
+    class="MuiContainer-root css-1w0rw2u-MuiContainer-root"
   >
     <h4
-      class="MuiTypography-root MuiTypography-h4 MuiTypography-alignCenter css-1ya2hdm-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-h4 MuiTypography-alignCenter css-zfqlko-MuiTypography-root"
       style="--Typography-textAlign: center;"
     >
       Product not found
@@ -18,10 +18,10 @@ exports[`Product should match snapshot with invalid product 1`] = `
 exports[`Product should match snapshot with valid product 1`] = `
 <div>
   <div
-    class="MuiContainer-root MuiContainer-maxWidthLg css-xsov46-MuiContainer-root"
+    class="MuiContainer-root css-1nzm02b-MuiContainer-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-4z7gnm-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-spacing-md-4 css-jy1tff-MuiGrid-root"
     >
       <div
         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
@@ -38,7 +38,7 @@ exports[`Product should match snapshot with valid product 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-4lkm7v-MuiGrid-root"
       >
         <div
           class="MuiBox-root css-0"

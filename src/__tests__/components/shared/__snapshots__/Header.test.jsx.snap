@@ -3,38 +3,44 @@
 exports[`Header should match snapshot with cart items 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-ptdwpq-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionSticky css-1d63wei-MuiPaper-root-MuiAppBar-root"
     style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
   >
     <div
-      class="MuiContainer-root MuiContainer-maxWidthLg MuiContainer-disableGutters css-ho17r4-MuiContainer-root"
+      class="MuiContainer-root MuiContainer-disableGutters css-1ifzrxw-MuiContainer-root"
     >
       <div
-        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1n5sh1q-MuiToolbar-root"
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1lnouk6-MuiToolbar-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-h6 css-jwpxwx-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h6 css-1lv9kzo-MuiTypography-root"
           href="/"
         >
           Marketplace
         </a>
-        <div>
+        <div
+          style="display: flex; align-items: center; gap: 20px;"
+        >
           <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-1jm6ey3-MuiButtonBase-root-MuiButton-root"
             href="/"
-            style="text-decoration: none; margin-right: 20px;"
+            id=":r2:"
+            tabindex="0"
           >
             Home
           </a>
           <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-d6sbsx-MuiButtonBase-root-MuiButton-root"
             href="/cart"
-            style="text-decoration: none;"
+            id=":r3:"
+            tabindex="0"
           >
             <span
-              class="MuiBadge-root css-63ezxx-MuiBadge-root"
+              class="MuiBadge-root css-ieruxw-MuiBadge-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-j449kx-MuiSvgIcon-root"
                 data-testid="ShoppingCartIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -60,38 +66,44 @@ exports[`Header should match snapshot with cart items 1`] = `
 exports[`Header should match snapshot with default props 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-ptdwpq-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionSticky css-1d63wei-MuiPaper-root-MuiAppBar-root"
     style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
   >
     <div
-      class="MuiContainer-root MuiContainer-maxWidthLg MuiContainer-disableGutters css-ho17r4-MuiContainer-root"
+      class="MuiContainer-root MuiContainer-disableGutters css-1ifzrxw-MuiContainer-root"
     >
       <div
-        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1n5sh1q-MuiToolbar-root"
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1lnouk6-MuiToolbar-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-h6 css-jwpxwx-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h6 css-1lv9kzo-MuiTypography-root"
           href="/"
         >
           Marketplace
         </a>
-        <div>
+        <div
+          style="display: flex; align-items: center; gap: 20px;"
+        >
           <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-1jm6ey3-MuiButtonBase-root-MuiButton-root"
             href="/"
-            style="text-decoration: none; margin-right: 20px;"
+            id=":r0:"
+            tabindex="0"
           >
             Home
           </a>
           <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-d6sbsx-MuiButtonBase-root-MuiButton-root"
             href="/cart"
-            style="text-decoration: none;"
+            id=":r1:"
+            tabindex="0"
           >
             <span
-              class="MuiBadge-root css-63ezxx-MuiBadge-root"
+              class="MuiBadge-root css-ieruxw-MuiBadge-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-j449kx-MuiSvgIcon-root"
                 data-testid="ShoppingCartIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -115,38 +127,44 @@ exports[`Header should match snapshot with default props 1`] = `
 exports[`Header should match snapshot with max cart items 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-ptdwpq-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionSticky css-1d63wei-MuiPaper-root-MuiAppBar-root"
     style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
   >
     <div
-      class="MuiContainer-root MuiContainer-maxWidthLg MuiContainer-disableGutters css-ho17r4-MuiContainer-root"
+      class="MuiContainer-root MuiContainer-disableGutters css-1ifzrxw-MuiContainer-root"
     >
       <div
-        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1n5sh1q-MuiToolbar-root"
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1lnouk6-MuiToolbar-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-h6 css-jwpxwx-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h6 css-1lv9kzo-MuiTypography-root"
           href="/"
         >
           Marketplace
         </a>
-        <div>
+        <div
+          style="display: flex; align-items: center; gap: 20px;"
+        >
           <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-1jm6ey3-MuiButtonBase-root-MuiButton-root"
             href="/"
-            style="text-decoration: none; margin-right: 20px;"
+            id=":r4:"
+            tabindex="0"
           >
             Home
           </a>
           <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-d6sbsx-MuiButtonBase-root-MuiButton-root"
             href="/cart"
-            style="text-decoration: none;"
+            id=":r5:"
+            tabindex="0"
           >
             <span
-              class="MuiBadge-root css-63ezxx-MuiBadge-root"
+              class="MuiBadge-root css-ieruxw-MuiBadge-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-j449kx-MuiSvgIcon-root"
                 data-testid="ShoppingCartIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
