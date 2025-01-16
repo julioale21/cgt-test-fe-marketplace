@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ProductList matches snapshot with empty products 1`] = `<div />`;
+exports[`ProductList should match snapshot with empty products array 1`] = `<div />`;
 
-exports[`ProductList matches snapshot with products 1`] = `
+exports[`ProductList should match snapshot with products 1`] = `
 <div>
   <div
     class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-4z7gnm-MuiGrid-root"
