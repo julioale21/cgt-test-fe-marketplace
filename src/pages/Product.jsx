@@ -7,7 +7,6 @@ import { useSnackbar } from 'notistack'
 
 const Product = () => {
   const { product, isInCart, handleAddToCart } = useProduct();
-  // const { alert, showAlert, hideAlert } = useAlert();
   const { enqueueSnackbar } = useSnackbar()
 
   const onAddToCart = (quantity) => {

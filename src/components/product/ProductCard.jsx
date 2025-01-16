@@ -7,9 +7,11 @@ import { Card, CardActions, CardContent, CardMedia, Grid, Typography } from '@mu
 import { OutlinedButton } from '../buttons/OutlinedButton';
 import { ContainedButton } from '../buttons/ContainedButton';
 import { useCart } from '../../hooks/useCart';
+import { useSnackbar } from 'notistack';
 
 const ProductCard = ({ product }) => {
   const { addToCart } = useCart();
+  const { enqueueSnackbar } = useSnackbar();
 
   if (!product) {
     return null;
@@ -19,6 +21,7 @@ const ProductCard = ({ product }) => {
 
   const handleAddToCart = () => {
     addToCart({ product, quantity: 1 });
+    enqueueSnackbar('Product added to cart', { variant: 'success' });
   };
 
   return (
