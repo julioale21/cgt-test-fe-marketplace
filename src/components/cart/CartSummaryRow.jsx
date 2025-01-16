@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Box, Typography } from '@mui/material';
 
 const CartSummaryRow = ({
@@ -18,6 +19,27 @@ const CartSummaryRow = ({
       </Typography>
     </Box>
   );
+};
+
+CartSummaryRow.propTypes = {
+  label: PropTypes.string.isRequired,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  variant: PropTypes.oneOf([
+    'body1',
+    'body2',
+    'h1',
+    'h2',
+    'h3',
+    'h4',
+    'h5',
+    'h6',
+    'subtitle1',
+    'subtitle2',
+    'caption',
+    'overline'
+  ]),
+  labelColor: PropTypes.string,
+  valueColor: PropTypes.string
 };
 
 export { CartSummaryRow };
