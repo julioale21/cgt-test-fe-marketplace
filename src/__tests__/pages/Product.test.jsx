@@ -20,18 +20,26 @@ describe('Product', () => {
 
   const testProduct = products[0];
 
-  it('matches snapshot with valid product', () => {
-    const { container } = renderWithRouter('1');
+  it('should match snapshot with valid product', () => {
+    const productId = '1';
+
+    const { container } = renderWithRouter(productId);
+
     expect(container).toMatchSnapshot();
   });
 
-  it('matches snapshot with invalid product', () => {
-    const { container } = renderWithRouter('999');
+  it('should match snapshot with invalid product', () => {
+    const productId = '999';
+
+    const { container } = renderWithRouter(productId);
+
     expect(container).toMatchSnapshot();
   });
 
-  it('renders complete product information', () => {
-    renderWithRouter('1');
+  it('should render complete product information', () => {
+    const productId = '1';
+
+    renderWithRouter(productId);
 
     expect(screen.getByText(testProduct.name)).toBeInTheDocument();
     expect(screen.getByText(`$${testProduct.price.toFixed(2)}`)).toBeInTheDocument();
@@ -42,24 +50,30 @@ describe('Product', () => {
     expect(screen.getByText(testProduct.textures)).toBeInTheDocument();
   });
 
-  it('renders product image correctly', () => {
-    renderWithRouter('1');
+  it('should render product image with correct attributes', () => {
+    const productId = '1';
+
+    renderWithRouter(productId);
+
     const images = screen.getAllByRole('img');
     const productImage = images.find((img) => img.alt === testProduct.name);
-
     expect(productImage).toBeInTheDocument();
     expect(productImage).toHaveAttribute('src', testProduct.image);
     expect(productImage).toHaveAttribute('alt', testProduct.name);
   });
 
-  it('shows not found message for invalid product id', () => {
-    renderWithRouter('999');
+  it('should show not found message for invalid product id', () => {
+    const productId = '999';
+
+    renderWithRouter(productId);
+
     expect(screen.getByText(/Product not found/i)).toBeInTheDocument();
   });
 
-  it('shows add to cart button and handles click', () => {
-    renderWithRouter('1');
+  it('should show success message when product is added to cart', () => {
+    const productId = '1';
 
+    renderWithRouter(productId);
     const addToCartButton = screen.getByRole('button', { name: /add to cart/i });
     fireEvent.click(addToCartButton);
 
