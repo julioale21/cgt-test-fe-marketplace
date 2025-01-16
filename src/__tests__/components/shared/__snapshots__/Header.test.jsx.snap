@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header matches snapshot with cart items 1`] = `
+exports[`Header should match snapshot with cart items 1`] = `
 <div>
   <header
     class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-ptdwpq-MuiPaper-root-MuiAppBar-root"
@@ -57,7 +57,7 @@ exports[`Header matches snapshot with cart items 1`] = `
 </div>
 `;
 
-exports[`Header matches snapshot with default props 1`] = `
+exports[`Header should match snapshot with default props 1`] = `
 <div>
   <header
     class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-ptdwpq-MuiPaper-root-MuiAppBar-root"
@@ -112,7 +112,7 @@ exports[`Header matches snapshot with default props 1`] = `
 </div>
 `;
 
-exports[`Header matches snapshot with max cart items 1`] = `
+exports[`Header should match snapshot with max cart items 1`] = `
 <div>
   <header
     class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-ptdwpq-MuiPaper-root-MuiAppBar-root"
