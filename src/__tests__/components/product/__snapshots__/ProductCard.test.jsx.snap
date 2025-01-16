@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ProductCard matches snapshot 1`] = `
+exports[`ProductCard should match snapshot 1`] = `
 <div>
   <div
     class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-13i4rnv-MuiGrid-root"
@@ -100,4 +100,4 @@ exports[`ProductCard matches snapshot 1`] = `
 </div>
 `;
 
-exports[`ProductCard matches snapshot when no product is provided 1`] = `<div />`;
+exports[`ProductCard should match snapshot when no product is provided 1`] = `<div />`;
