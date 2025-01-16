@@ -1,11 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Box, Typography, Button } from '@mui/material';
 import { ShoppingCart } from '@mui/icons-material';
 import { ProductHeader } from './ProductHeader';
 import { ProductSpecs } from './ProductSpecs';
 
-
-export const ProductDetails = ({ product, isInCart, onAddToCart }) => {
+const ProductDetails = ({ product, isInCart, onAddToCart }) => {
   return (
     <Box>
       <ProductHeader name={product.name} rating={product.rating} category={product.category} />
@@ -38,3 +38,20 @@ export const ProductDetails = ({ product, isInCart, onAddToCart }) => {
     </Box>
   );
 };
+
+ProductDetails.propTypes = {
+  product: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+    category: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    description: PropTypes.string.isRequired,
+    format: PropTypes.string.isRequired,
+    polygons: PropTypes.number.isRequired,
+    textures: PropTypes.arrayOf(PropTypes.string).isRequired
+  }).isRequired,
+  isInCart: PropTypes.bool.isRequired,
+  onAddToCart: PropTypes.func.isRequired
+};
+
+export { ProductDetails };
