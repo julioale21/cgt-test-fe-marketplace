@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Card, CardContent, CardHeader, Typography, Divider, Stack } from '@mui/material';
+import PropTypes from 'prop-types';
 
 import {
   ArrowBack as ArrowBackIcon,
@@ -104,6 +105,15 @@ const CartSummary = ({
       </CardContent>
     </Card>
   );
+};
+
+CartSummary.propTypes = {
+  subtotal: PropTypes.number.isRequired,
+  shipping: PropTypes.number,
+  taxes: PropTypes.number.isRequired,
+  finalTotal: PropTypes.number.isRequired,
+  onCheckout: PropTypes.func.isRequired,
+  onContinueShopping: PropTypes.func.isRequired
 };
 
 export { CartSummary };
