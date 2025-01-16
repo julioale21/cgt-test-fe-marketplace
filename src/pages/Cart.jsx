@@ -1,69 +1,88 @@
 import React from 'react';
-import { useCart } from '../hooks/useCart';
-import { CartHeader, CartItemList, CartSummary, EmptyCart } from '../components';
-import { Card, CardContent, Divider, Grid } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
+import { CartItemList, CartSummary, EmptyCart } from '../components';
+import { Box, Typography, Button, Grid } from '@mui/material';
+import { RemoveShoppingCart as ClearCartIcon } from '@mui/icons-material';
+import { useCheckout } from '../hooks/useCheckout';
 
 const Cart = () => {
-  const { items, total, removeFromCart, updateQuantity, clearCart } = useCart();
-  const navigate = useNavigate();
-  const shipping = 0;
-  const subtotal = total;
-  const taxes = total * 0.1;
-  const finalTotal = subtotal + shipping + taxes;
+  const {
+    items,
+    cartItemsCount,
+    isEmpty,
+    subtotal,
+    shipping,
+    taxes,
+    finalTotal,
+    handleIncrement,
+    handleDecrement,
+    handleCheckout,
+    handleContinueShopping,
+    clearCart,
+    removeFromCart
+  } = useCheckout();
 
-  const handleIncrement = (item) => {
-    updateQuantity(item.id, item.quantity + 1);
-  };
-
-  const handleDecrement = (item) => {
-    if (item.quantity > 1) {
-      updateQuantity(item.id, item.quantity - 1);
-    } else {
-      removeFromCart(item.id);
-    }
-  };
-
-  const handleCheckout = () => {
-    alert('Checkout not yet implemented');
-  };
-
-  const handleContinueShopping = () => {
-    navigate('/');
-  };
-
-  if (items.length === 0) {
+  if (isEmpty) {
     return <EmptyCart onContinueShopping={handleContinueShopping} />;
   }
 
   return (
-    <Grid container spacing={3} sx={{ p: { xs: 2, md: 4 }, maxWidth: 1400, mx: 'auto' }}>
-      <Grid item xs={12} md={8} sx={{ order: { xs: 1, md: 1 } }}>
-        <Card>
-          <CartHeader itemCount={items.length} onClearCart={clearCart} />
-          <Divider />
-          <CardContent>
+    <Box
+      sx={{
+        maxWidth: 1400,
+        mx: 'auto',
+        px: { xs: 2, md: 4 },
+        py: { xs: 3, md: 5 }
+      }}
+    >
+      <Grid container spacing={4}>
+        <Grid item xs={12} md={8}>
+          <Box
+            sx={{
+              mb: 3,
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center'
+            }}
+          >
+            <Typography variant="h4" sx={{ fontWeight: 600 }}>
+              {`Shopping Cart (${cartItemsCount} items)`}
+            </Typography>
+            <Button
+              onClick={clearCart}
+              startIcon={<ClearCartIcon />}
+              color="secondary"
+              sx={{
+                '&:hover': {
+                  bgcolor: 'secondary.lighter'
+                }
+              }}
+            >
+              Clear Cart
+            </Button>
+          </Box>
+
+          <Box sx={{ mt: 3 }}>
             <CartItemList
               items={items}
               onIncrement={handleIncrement}
               onDecrement={handleDecrement}
               onRemove={removeFromCart}
             />
-          </CardContent>
-        </Card>
-      </Grid>
+          </Box>
+        </Grid>
 
-      <Grid item xs={12} md={4} sx={{ order: { xs: 2, md: 2 } }}>
-        <CartSummary
-          subtotal={subtotal}
-          shipping={shipping}
-          taxes={taxes}
-          finalTotal={finalTotal}
-          onCheckout={handleCheckout}
-          onContinueShopping={handleContinueShopping}
-        />
+        <Grid item xs={12} md={4}>
+          <CartSummary
+            subtotal={subtotal}
+            shipping={shipping}
+            taxes={taxes}
+            finalTotal={finalTotal}
+            onCheckout={handleCheckout}
+            onContinueShopping={handleContinueShopping}
+          />
+        </Grid>
       </Grid>
-    </Grid>
+    </Box>
   );
 };
 

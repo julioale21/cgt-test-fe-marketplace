@@ -3,184 +3,140 @@
 exports[`CartSummary should match snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-s7uqjd-MuiPaper-root-MuiCard-root"
-    style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+    class="MuiBox-root css-yvg4p4"
   >
+    <h5
+      class="MuiTypography-root MuiTypography-h5 css-19hh0f1-MuiTypography-root"
+    >
+      Order Summary
+    </h5>
     <div
-      class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
+      class="MuiStack-root css-1sazv7p-MuiStack-root"
     >
       <div
-        class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
+        class="MuiBox-root css-gg4vpm"
       >
-        <span
-          class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-16xl4zq-MuiTypography-root"
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-k16oju-MuiTypography-root"
         >
-          Order Summary
-        </span>
+          Subtotal
+        </p>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+        >
+          $99.99
+        </p>
+      </div>
+      <div
+        class="MuiBox-root css-gg4vpm"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-k16oju-MuiTypography-root"
+        >
+          Shipping
+        </p>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-wl91uy-MuiTypography-root"
+        >
+          Free
+        </p>
+      </div>
+      <div
+        class="MuiBox-root css-gg4vpm"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-k16oju-MuiTypography-root"
+        >
+          Estimated tax
+        </p>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+        >
+          $8.99
+        </p>
+      </div>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+      />
+      <div
+        class="MuiBox-root css-gg4vpm"
+      >
+        <h6
+          class="MuiTypography-root MuiTypography-h6 css-1miy0lu-MuiTypography-root"
+        >
+          Total
+        </h6>
+        <h6
+          class="MuiTypography-root MuiTypography-h6 css-1miy0lu-MuiTypography-root"
+        >
+          $108.98
+        </h6>
       </div>
     </div>
-    <hr
-      class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
-    />
     <div
-      class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
+      class="MuiStack-root css-1wviqzt-MuiStack-root"
     >
-      <div
-        class="MuiStack-root css-1sazv7p-MuiStack-root"
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary css-14lfj9a-MuiButtonBase-root-MuiButton-root"
+        id=":r0:"
+        tabindex="0"
+        type="button"
       >
-        <div
-          class="MuiBox-root css-gg4vpm"
-        >
-          <p
-            class="MuiTypography-root MuiTypography-body1 css-k16oju-MuiTypography-root"
-          >
-            Subtotal
-          </p>
-          <p
-            class="MuiTypography-root MuiTypography-body1 css-4leci6-MuiTypography-root"
-          >
-            $99.99
-          </p>
-        </div>
-        <div
-          class="MuiBox-root css-gg4vpm"
-        >
-          <p
-            class="MuiTypography-root MuiTypography-body1 css-k16oju-MuiTypography-root"
-          >
-            Shipping
-          </p>
-          <p
-            class="MuiTypography-root MuiTypography-body1 css-4leci6-MuiTypography-root"
-          >
-            Free
-          </p>
-        </div>
-        <div
-          class="MuiBox-root css-gg4vpm"
-        >
-          <p
-            class="MuiTypography-root MuiTypography-body1 css-k16oju-MuiTypography-root"
-          >
-            Estimated tax
-          </p>
-          <p
-            class="MuiTypography-root MuiTypography-body1 css-4leci6-MuiTypography-root"
-          >
-            $8.99
-          </p>
-        </div>
-        <hr
-          class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+        Continue to Checkout
+      </button>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButton-colorPrimary css-fdnlxf-MuiButtonBase-root-MuiButton-root"
+        id=":r1:"
+        tabindex="0"
+        type="button"
+      >
+        Continue Shopping
+      </button>
+    </div>
+    <div
+      class="MuiBox-root css-4sywta"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+      >
+        Secure Checkout
+      </p>
+      <div
+        class="MuiStack-root css-hbbo2v-MuiStack-root"
+      >
+        <img
+          alt="Visa"
+          class="MuiBox-root css-tv7otk"
+          src="https://cdn.visa.com/v2/assets/images/logos/visa/blue/logo.png"
         />
-        <div
-          class="MuiBox-root css-gg4vpm"
+        <img
+          alt="Mastercard"
+          class="MuiBox-root css-tv7otk"
+          src="https://cdn.worldvectorlogo.com/logos/mastercard-7.svg"
+        />
+        <img
+          alt="PayPal"
+          class="MuiBox-root css-tv7otk"
+          src="https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg"
+        />
+      </div>
+      <div
+        class="MuiStack-root css-xqxc1w-MuiStack-root"
+      >
+        <svg
+          class="MuiBox-root css-skhuem"
+          viewBox="0 0 24 24"
         >
-          <h6
-            class="MuiTypography-root MuiTypography-h6 css-vvtk0a-MuiTypography-root"
-          >
-            Total
-          </h6>
-          <h6
-            class="MuiTypography-root MuiTypography-h6 css-vvtk0a-MuiTypography-root"
-          >
-            $108.98
-          </h6>
-        </div>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth css-bks8m7-MuiButtonBase-root-MuiButton-root"
-          id=":r0:"
-          tabindex="0"
-          type="button"
+          <path
+            d="M20 8H4M20 16H4"
+            fill="currentColor"
+          />
+        </svg>
+        <p
+          class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
         >
-          <span
-            class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium css-1sh91j5-MuiButton-startIcon"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-              data-testid="CreditCardIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2m0 14H4v-6h16zm0-10H4V6h16z"
-              />
-            </svg>
-          </span>
-          Continue to Checkout
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth css-acx9xf-MuiButtonBase-root-MuiButton-root"
-          id=":r1:"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium css-1sh91j5-MuiButton-startIcon"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-              data-testid="ArrowBackIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z"
-              />
-            </svg>
-          </span>
-          Continue Shopping
-        </button>
-        <div
-          class="MuiBox-root css-1yuhvjn"
-        >
-          <h6
-            class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-gutterBottom css-10f82c-MuiTypography-root"
-          >
-            Secure Checkout
-          </h6>
-          <div
-            class="MuiStack-root css-hbbo2v-MuiStack-root"
-          >
-            <img
-              alt="Visa"
-              class="MuiBox-root css-tv7otk"
-              src="https://cdn.visa.com/v2/assets/images/logos/visa/blue/logo.png"
-            />
-            <img
-              alt="Mastercard"
-              class="MuiBox-root css-tv7otk"
-              src="https://cdn.worldvectorlogo.com/logos/mastercard-7.svg"
-            />
-            <img
-              alt="PayPal"
-              class="MuiBox-root css-tv7otk"
-              src="https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg"
-            />
-          </div>
-        </div>
-        <div
-          class="MuiBox-root css-1yuhvjn"
-        >
-          <p
-            class="MuiTypography-root MuiTypography-body2 css-yj4wuh-MuiTypography-root"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-              data-testid="LocalShippingIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5m13.5-9 1.96 2.5H17V9.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5"
-              />
-            </svg>
-            Free shipping on all orders
-          </p>
-        </div>
+          Free shipping on all orders
+        </p>
       </div>
     </div>
   </div>

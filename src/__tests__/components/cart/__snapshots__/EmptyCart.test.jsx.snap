@@ -46,7 +46,7 @@ exports[`EmptyCart should match snapshot 1`] = `
             />
           </svg>
         </span>
-        Continue Shopping
+        Start Shopping
       </button>
     </div>
   </div>

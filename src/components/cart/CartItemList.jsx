@@ -1,10 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Stack } from '@mui/material';
+import { Box } from '@mui/material';
 import { CartItem } from './CartItem';
 
 const CartItemList = ({ items, onIncrement, onDecrement, onRemove }) => (
-  <Stack spacing={2}>
+  <Box
+    sx={{
+      display: 'flex',
+      flexDirection: 'column',
+      '& > *:not(:last-child)': {
+        borderBottom: '1px solid',
+        borderColor: 'divider'
+      }
+    }}
+  >
     {items.map((item) => (
       <CartItem
         key={item.id}
@@ -14,7 +23,7 @@ const CartItemList = ({ items, onIncrement, onDecrement, onRemove }) => (
         onRemove={() => onRemove(item.id)}
       />
     ))}
-  </Stack>
+  </Box>
 );
 
 CartItemList.propTypes = {
