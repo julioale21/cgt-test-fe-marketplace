@@ -1,20 +1,18 @@
 import React from 'react';
 import { Container, Grid, Typography } from '@mui/material';
 import { useProduct } from '../hooks/useProduct';
-import { useAlert } from '../hooks/useAlert';
 import { ProductImage } from '../components';
-import { CustomAlert, ProductDetails } from '../components';
+import { ProductDetails } from '../components';
+import { useSnackbar } from 'notistack'
 
 const Product = () => {
   const { product, isInCart, handleAddToCart } = useProduct();
-  const { alert, showAlert, hideAlert } = useAlert();
+  const { enqueueSnackbar } = useSnackbar()
 
   const onAddToCart = (quantity) => {
     const success = handleAddToCart(quantity);
     if (success) {
-      showAlert(
-        `${quantity} ${quantity === 1 ? 'unit' : 'units'} of ${product.name} added to cart!`
-      );
+      enqueueSnackbar(`Added ${quantity} units to cart`, { variant: 'success' });
     }
   };
 
@@ -80,12 +78,12 @@ const Product = () => {
         </Grid>
       </Grid>
 
-      <CustomAlert
+      {/* <CustomAlert
         open={alert.open}
         message={alert.message}
         severity={alert.severity}
         onClose={hideAlert}
-      />
+      /> */}
     </Container>
   );
 };
