@@ -61,22 +61,30 @@ describe('CartItemList', () => {
     jest.clearAllMocks();
   });
 
-  it('matches snapshot', () => {
-    const { container } = render(<CartItemList {...defaultProps} />);
+  it('should match snapshot', () => {
+    const props = { ...defaultProps };
+
+    const { container } = render(<CartItemList {...props} />);
+
     expect(container).toMatchSnapshot();
   });
 
-  it('renders correct number of CartItem components', () => {
-    render(<CartItemList {...defaultProps} />);
+  it('should render correct number of CartItem components', () => {
+    const props = { ...defaultProps };
+
+    render(<CartItemList {...props} />);
+
     const cartItems = screen.getAllByTestId(/^cart-item-/);
     expect(cartItems).toHaveLength(mockItems.length);
   });
 
-  it('renders items in correct order with all required elements', () => {
-    render(<CartItemList {...defaultProps} />);
+  it('should render items in correct order with all required elements', () => {
+    const props = { ...defaultProps };
+
+    render(<CartItemList {...props} />);
+
     const items = screen.getAllByTestId(/^cart-item-/);
     expect(items).toHaveLength(2);
-
     items.forEach((item, index) => {
       const mockItem = mockItems[index];
       expect(item).toHaveTextContent(mockItem.name);
@@ -87,41 +95,44 @@ describe('CartItemList', () => {
     });
   });
 
-  it('calls onIncrement with correct item', async () => {
+  it('should call onIncrement with correct item', async () => {
+    const props = { ...defaultProps };
     const user = userEvent.setup();
-    render(<CartItemList {...defaultProps} />);
 
-    const incrementButton = screen.getByTestId('increment-1');
-    await user.click(incrementButton);
+    render(<CartItemList {...props} />);
+    await user.click(screen.getByTestId('increment-1'));
 
-    expect(defaultProps.onIncrement).toHaveBeenCalledTimes(1);
-    expect(defaultProps.onIncrement).toHaveBeenCalledWith(mockItems[0]);
+    expect(props.onIncrement).toHaveBeenCalledTimes(1);
+    expect(props.onIncrement).toHaveBeenCalledWith(mockItems[0]);
   });
 
-  it('calls onDecrement with correct item', async () => {
+  it('should call onDecrement with correct item', async () => {
+    const props = { ...defaultProps };
     const user = userEvent.setup();
-    render(<CartItemList {...defaultProps} />);
 
-    const decrementButton = screen.getByTestId('decrement-2');
-    await user.click(decrementButton);
+    render(<CartItemList {...props} />);
+    await user.click(screen.getByTestId('decrement-2'));
 
-    expect(defaultProps.onDecrement).toHaveBeenCalledTimes(1);
-    expect(defaultProps.onDecrement).toHaveBeenCalledWith(mockItems[1]);
+    expect(props.onDecrement).toHaveBeenCalledTimes(1);
+    expect(props.onDecrement).toHaveBeenCalledWith(mockItems[1]);
   });
 
-  it('calls onRemove with correct item id', async () => {
+  it('should call onRemove with correct item id', async () => {
+    const props = { ...defaultProps };
     const user = userEvent.setup();
-    render(<CartItemList {...defaultProps} />);
 
-    const removeButton = screen.getByTestId('remove-1');
-    await user.click(removeButton);
+    render(<CartItemList {...props} />);
+    await user.click(screen.getByTestId('remove-1'));
 
-    expect(defaultProps.onRemove).toHaveBeenCalledTimes(1);
-    expect(defaultProps.onRemove).toHaveBeenCalledWith(mockItems[0].id);
+    expect(props.onRemove).toHaveBeenCalledTimes(1);
+    expect(props.onRemove).toHaveBeenCalledWith(mockItems[0].id);
   });
 
-  it('handles empty items array', () => {
-    render(<CartItemList {...defaultProps} items={[]} />);
+  it('should handle empty items array', () => {
+    const props = { ...defaultProps, items: [] };
+
+    render(<CartItemList {...props} />);
+
     const stack = screen.getByTestId('mui-stack');
     expect(stack).toBeInTheDocument();
     expect(stack.children).toHaveLength(0);
