@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductDetails should match snapshot when product is in cart 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-19midj6"
+  >
+    <div
+      data-testid="product-header"
+    >
+      Test Product
+       - 
+      4.5
+       - 
+      Test Category
+    </div>
+    <h4
+      class="MuiTypography-root MuiTypography-h4 css-1uuypgi-MuiTypography-root"
+    >
+      $
+      99.99
+    </h4>
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-o5kk20-MuiTypography-root"
+    >
+      Test description
+    </p>
+    <div
+      class="MuiBox-root css-1yjvs5a"
+    >
+      <div
+        data-testid="product-specs"
+      >
+        FBX,OBJ
+         - 
+        High
+         - 
+        4K
+      </div>
+    </div>
+    <div
+      class="MuiStack-root css-1sazv7p-MuiStack-root"
+    >
+      <div
+        class="MuiBox-root css-j0ozid"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-k16oju-MuiTypography-root"
+        >
+          Cantidad:
+        </p>
+        <div
+          class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded css-schvjd-MuiPaper-root"
+        >
+          <button
+            class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeSmall css-1374xo4-MuiButtonBase-root-MuiIconButton-root"
+            disabled=""
+            id=":r3:"
+            tabindex="-1"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-loadingIndicator css-165vu30-MuiIconButton-loadingIndicator"
+            />
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              data-testid="RemoveIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 13H5v-2h14z"
+              />
+            </svg>
+          </button>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-144jna6-MuiTypography-root"
+          >
+            1
+          </p>
+          <button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1374xo4-MuiButtonBase-root-MuiIconButton-root"
+            id=":r4:"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-loadingIndicator css-165vu30-MuiIconButton-loadingIndicator"
+            />
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              data-testid="AddIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+              />
+            </svg>
+          </button>
+        </div>
+        <span
+          class="MuiTypography-root MuiTypography-caption css-1374baf-MuiTypography-root"
+        >
+          Máximo 
+          50
+           unidades
+        </span>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButton-colorSecondary MuiButton-fullWidth MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButton-colorSecondary MuiButton-fullWidth css-15sow52-MuiButtonBase-root-MuiButton-root"
+        id=":r5:"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeLarge css-hev6se-MuiButton-startIcon"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="ShoppingCartIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2M1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2"
+            />
+          </svg>
+        </span>
+        Already in Cart
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductDetails should match snapshot when product is not in cart 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-19midj6"
+  >
+    <div
+      data-testid="product-header"
+    >
+      Test Product
+       - 
+      4.5
+       - 
+      Test Category
+    </div>
+    <h4
+      class="MuiTypography-root MuiTypography-h4 css-1uuypgi-MuiTypography-root"
+    >
+      $
+      99.99
+    </h4>
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-o5kk20-MuiTypography-root"
+    >
+      Test description
+    </p>
+    <div
+      class="MuiBox-root css-1yjvs5a"
+    >
+      <div
+        data-testid="product-specs"
+      >
+        FBX,OBJ
+         - 
+        High
+         - 
+        4K
+      </div>
+    </div>
+    <div
+      class="MuiStack-root css-1sazv7p-MuiStack-root"
+    >
+      <div
+        class="MuiBox-root css-j0ozid"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-k16oju-MuiTypography-root"
+        >
+          Cantidad:
+        </p>
+        <div
+          class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded css-schvjd-MuiPaper-root"
+        >
+          <button
+            class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeSmall css-1374xo4-MuiButtonBase-root-MuiIconButton-root"
+            disabled=""
+            id=":r0:"
+            tabindex="-1"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-loadingIndicator css-165vu30-MuiIconButton-loadingIndicator"
+            />
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              data-testid="RemoveIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 13H5v-2h14z"
+              />
+            </svg>
+          </button>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-144jna6-MuiTypography-root"
+          >
+            1
+          </p>
+          <button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1374xo4-MuiButtonBase-root-MuiIconButton-root"
+            id=":r1:"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-loadingIndicator css-165vu30-MuiIconButton-loadingIndicator"
+            />
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              data-testid="AddIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+              />
+            </svg>
+          </button>
+        </div>
+        <span
+          class="MuiTypography-root MuiTypography-caption css-1374baf-MuiTypography-root"
+        >
+          Máximo 
+          50
+           unidades
+        </span>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth css-1bbsvxk-MuiButtonBase-root-MuiButton-root"
+        id=":r2:"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeLarge css-hev6se-MuiButton-startIcon"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="ShoppingCartIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2M1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2"
+            />
+          </svg>
+        </span>
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+`;

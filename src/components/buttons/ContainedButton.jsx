@@ -9,11 +9,11 @@ const ContainedButton = ({ children, startIcon, ...props }) => (
     startIcon={startIcon}
     sx={{
       py: 0.5,
-      px: 1,
+      px: 2,
       minWidth: 'auto',
       textTransform: 'none',
       fontSize: '0.875rem',
-      borderRadius: 1,
+      borderRadius: 5,
       boxShadow: 'none',
       '&:hover': {
         boxShadow: 'none',

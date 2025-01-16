@@ -7,55 +7,75 @@ describe('cartReducer', () => {
     total: 0
   };
 
-  const sampleItem = {
+  const sampleProduct = {
     id: 1,
     name: 'Test Product',
     price: 10.00
   };
 
   describe('ADD_TO_CART', () => {
-    it('should add a new item to an empty cart', () => {
+    it('should add a new item with quantity to an empty cart', () => {
       const action = {
         type: CART_ACTIONS.ADD_TO_CART,
-        payload: sampleItem
+        payload: {
+          product: sampleProduct,
+          quantity: 2
+        }
       };
 
       const newState = cartReducer(initialState, action);
 
       expect(newState.items).toHaveLength(1);
-      expect(newState.items[0]).toEqual({ ...sampleItem, quantity: 1 });
-      expect(newState.total).toBe(10.00);
+      expect(newState.items[0]).toEqual({ ...sampleProduct, quantity: 2 });
+      expect(newState.total).toBe(20.00);
     });
 
-    it('should increment quantity for existing item', () => {
+    it('should increment existing item quantity', () => {
       const stateWithItem = {
-        items: [{ ...sampleItem, quantity: 1 }],
+        items: [{ ...sampleProduct, quantity: 1 }],
         total: 10.00
       };
 
       const action = {
         type: CART_ACTIONS.ADD_TO_CART,
-        payload: sampleItem
+        payload: {
+          product: sampleProduct,
+          quantity: 2
+        }
       };
 
       const newState = cartReducer(stateWithItem, action);
 
       expect(newState.items).toHaveLength(1);
-      expect(newState.items[0].quantity).toBe(2);
-      expect(newState.total).toBe(20.00);
+      expect(newState.items[0].quantity).toBe(3);
+      expect(newState.total).toBe(30.00);
+    });
+
+    it('should add new item with default quantity of 1', () => {
+      const action = {
+        type: CART_ACTIONS.ADD_TO_CART,
+        payload: {
+          product: sampleProduct
+        }
+      };
+
+      const newState = cartReducer(initialState, action);
+
+      expect(newState.items[0].quantity).toBe(1);
+      expect(newState.total).toBe(10.00);
     });
   });
 
   describe('REMOVE_FROM_CART', () => {
-    it('should remove an item from cart', () => {
+    it('should remove an item from cart and update total', () => {
       const stateWithItem = {
-        items: [{ ...sampleItem, quantity: 2 }],
+        items: [{ ...sampleProduct, quantity: 2 }],
         total: 20.00
       };
 
       const action = {
         type: CART_ACTIONS.REMOVE_FROM_CART,
-        payload: sampleItem.id
+        payload: sampleProduct.id
       };
 
       const newState = cartReducer(stateWithItem, action);
@@ -66,15 +86,15 @@ describe('cartReducer', () => {
   });
 
   describe('UPDATE_QUANTITY', () => {
-    it('should increase item quantity', () => {
+    it('should increase item quantity and update total', () => {
       const stateWithItem = {
-        items: [{ ...sampleItem, quantity: 1 }],
+        items: [{ ...sampleProduct, quantity: 1 }],
         total: 10.00
       };
 
       const action = {
         type: CART_ACTIONS.UPDATE_QUANTITY,
-        payload: { id: sampleItem.id, quantity: 3 }
+        payload: { id: sampleProduct.id, quantity: 3 }
       };
 
       const newState = cartReducer(stateWithItem, action);
@@ -83,15 +103,15 @@ describe('cartReducer', () => {
       expect(newState.total).toBe(30.00);
     });
 
-    it('should decrease item quantity', () => {
+    it('should decrease item quantity and update total', () => {
       const stateWithItem = {
-        items: [{ ...sampleItem, quantity: 3 }],
+        items: [{ ...sampleProduct, quantity: 3 }],
         total: 30.00
       };
 
       const action = {
         type: CART_ACTIONS.UPDATE_QUANTITY,
-        payload: { id: sampleItem.id, quantity: 1 }
+        payload: { id: sampleProduct.id, quantity: 1 }
       };
 
       const newState = cartReducer(stateWithItem, action);
@@ -99,13 +119,34 @@ describe('cartReducer', () => {
       expect(newState.items[0].quantity).toBe(1);
       expect(newState.total).toBe(10.00);
     });
+
+    it('should handle multiple items quantity update', () => {
+      const initialStateWithMultipleItems = {
+        items: [
+          { ...sampleProduct, quantity: 1 },
+          { id: 2, name: 'Another Product', price: 15.00, quantity: 1 }
+        ],
+        total: 25.00
+      };
+
+      const action = {
+        type: CART_ACTIONS.UPDATE_QUANTITY,
+        payload: { id: sampleProduct.id, quantity: 2 }
+      };
+
+      const newState = cartReducer(initialStateWithMultipleItems, action);
+
+      expect(newState.items[0].quantity).toBe(2);
+      expect(newState.total).toBe(35.00);
+      expect(newState.items[1].quantity).toBe(1);
+    });
   });
 
   describe('CLEAR_CART', () => {
-    it('should clear all items from cart', () => {
+    it('should remove all items and reset total', () => {
       const stateWithItems = {
         items: [
-          { ...sampleItem, quantity: 2 },
+          { ...sampleProduct, quantity: 2 },
           { id: 2, name: 'Another Product', price: 15.00, quantity: 1 }
         ],
         total: 35.00

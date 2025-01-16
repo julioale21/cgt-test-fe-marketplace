@@ -3,10 +3,10 @@
 exports[`Product should match snapshot with invalid product 1`] = `
 <div>
   <div
-    class="MuiContainer-root MuiContainer-maxWidthLg css-xsov46-MuiContainer-root"
+    class="MuiContainer-root css-1w0rw2u-MuiContainer-root"
   >
     <h4
-      class="MuiTypography-root MuiTypography-h4 MuiTypography-alignCenter css-1ya2hdm-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-h4 MuiTypography-alignCenter css-zfqlko-MuiTypography-root"
       style="--Typography-textAlign: center;"
     >
       Product not found
@@ -18,30 +18,30 @@ exports[`Product should match snapshot with invalid product 1`] = `
 exports[`Product should match snapshot with valid product 1`] = `
 <div>
   <div
-    class="MuiContainer-root MuiContainer-maxWidthLg css-xsov46-MuiContainer-root"
+    class="MuiContainer-root css-1nzm02b-MuiContainer-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-4z7gnm-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-spacing-md-4 css-jy1tff-MuiGrid-root"
     >
       <div
         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-1j74uew-MuiPaper-root-MuiCard-root"
-          style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1m3n6uh-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: none;"
         >
           <img
             alt="3D Modern Chair"
-            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-d5zgje-MuiCardMedia-root"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-154quz6-MuiCardMedia-root"
             src="3d-chair.jpg"
           />
         </div>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-4lkm7v-MuiGrid-root"
       >
         <div
-          class="MuiBox-root css-0"
+          class="MuiBox-root css-19midj6"
         >
           <h4
             class="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom css-1it4a80-MuiTypography-root"
@@ -1034,104 +1034,180 @@ exports[`Product should match snapshot with valid product 1`] = `
               </span>
             </div>
           </div>
-          <h5
-            class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-eg95s6-MuiTypography-root"
+          <h4
+            class="MuiTypography-root MuiTypography-h4 css-1uuypgi-MuiTypography-root"
           >
             $
             149.99
-          </h5>
+          </h4>
           <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-rn0nqi-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-o5kk20-MuiTypography-root"
           >
             High-quality 3D model of a modern minimalist chair, perfect for architectural visualization.
           </p>
-          <ul
-            class="MuiList-root MuiList-padding css-b7dj7n-MuiList-root"
+          <div
+            class="MuiBox-root css-1yjvs5a"
           >
-            <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
+            <ul
+              class="MuiList-root MuiList-padding css-b7dj7n-MuiList-root"
             >
-              <div
-                class="MuiListItemText-root MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
               >
-                <span
-                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-rizt0-MuiTypography-root"
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
                 >
-                  Available Formats
-                </span>
-                <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
-                >
-                  FBX, OBJ, MAX
-                </p>
-              </div>
-            </li>
-            <hr
-              class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
-            />
-            <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
-            >
-              <div
-                class="MuiListItemText-root MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-rizt0-MuiTypography-root"
+                  >
+                    Available Formats
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+                  >
+                    FBX, OBJ, MAX
+                  </p>
+                </div>
+              </li>
+              <hr
+                class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+              />
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
               >
-                <span
-                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-rizt0-MuiTypography-root"
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
                 >
-                  Polygons
-                </span>
-                <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
-                >
-                  24k
-                </p>
-              </div>
-            </li>
-            <hr
-              class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
-            />
-            <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
-            >
-              <div
-                class="MuiListItemText-root MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-rizt0-MuiTypography-root"
+                  >
+                    Polygons
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+                  >
+                    24k
+                  </p>
+                </div>
+              </li>
+              <hr
+                class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+              />
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
               >
-                <span
-                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-rizt0-MuiTypography-root"
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-14ln1j6-MuiListItemText-root"
                 >
-                  Textures
-                </span>
-                <p
-                  class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
-                >
-                  4K PBR
-                </p>
-              </div>
-            </li>
-          </ul>
-          <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth css-10a88gd-MuiButtonBase-root-MuiButton-root"
-            id=":r1j:"
-            tabindex="0"
-            type="button"
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-rizt0-MuiTypography-root"
+                  >
+                    Textures
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1a1whku-MuiTypography-root"
+                  >
+                    4K PBR
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="MuiStack-root css-1sazv7p-MuiStack-root"
           >
-            <span
-              class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeLarge css-hev6se-MuiButton-startIcon"
+            <div
+              class="MuiBox-root css-j0ozid"
             >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                data-testid="ShoppingCartIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-k16oju-MuiTypography-root"
               >
-                <path
-                  d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2M1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2"
-                />
-              </svg>
-            </span>
-            Add to Cart
-          </button>
+                Cantidad:
+              </p>
+              <div
+                class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded css-schvjd-MuiPaper-root"
+              >
+                <button
+                  class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeSmall css-1374xo4-MuiButtonBase-root-MuiIconButton-root"
+                  disabled=""
+                  id=":r1j:"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-loadingIndicator css-165vu30-MuiIconButton-loadingIndicator"
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                    data-testid="RemoveIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 13H5v-2h14z"
+                    />
+                  </svg>
+                </button>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-144jna6-MuiTypography-root"
+                >
+                  1
+                </p>
+                <button
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1374xo4-MuiButtonBase-root-MuiIconButton-root"
+                  id=":r1k:"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-loadingIndicator css-165vu30-MuiIconButton-loadingIndicator"
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                    data-testid="AddIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <span
+                class="MuiTypography-root MuiTypography-caption css-1374baf-MuiTypography-root"
+              >
+                Máximo 
+                50
+                 unidades
+              </span>
+            </div>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth css-1bbsvxk-MuiButtonBase-root-MuiButton-root"
+              id=":r1l:"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeLarge css-hev6se-MuiButton-startIcon"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                  data-testid="ShoppingCartIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2M1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2"
+                  />
+                </svg>
+              </span>
+              Add to Cart
+            </button>
+          </div>
         </div>
       </div>
     </div>

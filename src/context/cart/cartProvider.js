@@ -6,10 +6,13 @@ import { CartContext } from './cartContext';
 export const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(cartReducer, initialState);
 
-  const addToCart = useCallback((product) => {
+  const addToCart = useCallback(({ product, quantity }) => {
+    if (!product || product.price === undefined || quantity === undefined) {
+      throw new Error("Invalid product or quantity passed to addToCart");
+    }
     dispatch({ 
       type: CART_ACTIONS.ADD_TO_CART, 
-      payload: product 
+      payload: { product, quantity }
     });
   }, []);
 

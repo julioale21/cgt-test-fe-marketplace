@@ -12,7 +12,7 @@ const OutlinedButton = ({ children, ...props }) => (
       minWidth: 'auto',
       textTransform: 'none',
       fontSize: '0.875rem',
-      borderRadius: 1,
+      borderRadius: 5,
       '&:hover': {
         backgroundColor: 'rgba(25, 118, 210, 0.04)'
       }
