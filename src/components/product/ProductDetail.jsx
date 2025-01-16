@@ -29,7 +29,7 @@ const ProductDetails = ({ product, isInCart, onAddToCart }) => {
         size="large"
         startIcon={<ShoppingCart />}
         onClick={onAddToCart}
-        sx={{ mt: 4 }}
+        sx={{ mt: 4, borderRadius: 5 }}
         fullWidth
         color={isInCart ? 'secondary' : 'primary'}
       >
