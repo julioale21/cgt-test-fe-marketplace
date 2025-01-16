@@ -66,7 +66,6 @@ describe('CartSummary', () => {
     };
     render(<CartSummary {...zeroProps} />);
 
-    // Test specific sections to avoid duplicate $0.00 matches
     const subtotalRow = screen.getByText('Subtotal').closest('div');
     const taxRow = screen.getByText('Estimated tax').closest('div');
     const totalRow = screen.getByText('Total').closest('div');
