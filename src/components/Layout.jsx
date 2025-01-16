@@ -3,7 +3,7 @@ import { Header } from '../components/shared/Header';
 import { Box } from '@mui/material';
 import { useCart } from '../hooks/useCart';
 
-export function Layout() {
+const Layout = () => {
   const { items } = useCart();
 
   const cartItemsCount = items.reduce((total, item) => total + item.quantity, 0);
@@ -21,4 +21,6 @@ export function Layout() {
       </Box>
     </Box>
   );
-}
+};
+
+export { Layout };
