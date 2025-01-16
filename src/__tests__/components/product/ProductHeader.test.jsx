@@ -8,34 +8,49 @@ describe('ProductHeader', () => {
     category: 'Test Category'
   };
 
-  it('matches snapshot', () => {
-    const { container } = render(<ProductHeader {...mockProps} />);
+  it('should match snapshot', () => {
+    const props = { ...mockProps };
+
+    const { container } = render(<ProductHeader {...props} />);
+
     expect(container).toMatchSnapshot();
   });
 
-  it('renders product name as heading', () => {
-    render(<ProductHeader {...mockProps} />);
-    const heading = screen.getByText(mockProps.name);
+  it('should render product name as h4 heading', () => {
+    const props = { ...mockProps };
+
+    render(<ProductHeader {...props} />);
+
+    const heading = screen.getByText(props.name);
     expect(heading).toBeInTheDocument();
     expect(heading.tagName).toBe('H4');
   });
 
-  it('displays correct rating value', () => {
-    render(<ProductHeader {...mockProps} />);
-    expect(screen.getByText(`(${mockProps.rating})`)).toBeInTheDocument();
+  it('should display correct rating value', () => {
+    const props = { ...mockProps };
+
+    render(<ProductHeader {...props} />);
+
+    expect(screen.getByText(`(${props.rating})`)).toBeInTheDocument();
   });
 
-  it('shows category in a chip', () => {
-    render(<ProductHeader {...mockProps} />);
-    expect(screen.getByText(mockProps.category)).toBeInTheDocument();
+  it('should show category in a chip component', () => {
+    const props = { ...mockProps };
+
+    render(<ProductHeader {...props} />);
+
+    expect(screen.getByText(props.category)).toBeInTheDocument();
   });
 
-  it('renders rating component', () => {
-    const { container } = render(<ProductHeader {...mockProps} />);
+  it('should render rating component', () => {
+    const props = { ...mockProps };
+
+    const { container } = render(<ProductHeader {...props} />);
+
     expect(container.querySelector('.MuiRating-root')).toBeInTheDocument();
   });
 
-  it('throws error when required props are missing', () => {
+  it('should throw error when required props are missing', () => {
     const consoleSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
 
     render(<ProductHeader />);
