@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItem matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1fdopfm-MuiPaper-root"
+    style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+  >
+    <div
+      class="MuiBox-root css-j0ozid"
+    >
+      <img
+        alt="3D Mountain Model"
+        class="MuiBox-root css-npxvs5"
+        src="/test-image.jpg"
+      />
+      <div
+        class="MuiBox-root css-i9gxme"
+      >
+        <h6
+          class="MuiTypography-root MuiTypography-subtitle1 css-1i3tsf3-MuiTypography-root"
+        >
+          3D Mountain Model
+        </h6>
+        <p
+          class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+        >
+          $
+          29.99
+        </p>
+      </div>
+      <div
+        class="MuiBox-root css-axw7ok"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-155wbr6-MuiButtonBase-root-MuiIconButton-root"
+          id=":r0:"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-loadingIndicator css-165vu30-MuiIconButton-loadingIndicator"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="RemoveIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 13H5v-2h14z"
+            />
+          </svg>
+        </button>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-owqrw6-MuiTypography-root"
+        >
+          2
+        </p>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-155wbr6-MuiButtonBase-root-MuiIconButton-root"
+          id=":r1:"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-loadingIndicator css-165vu30-MuiIconButton-loadingIndicator"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="AddIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+            />
+          </svg>
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorError MuiIconButton-sizeSmall css-195ve3w-MuiButtonBase-root-MuiIconButton-root"
+          id=":r2:"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-loadingIndicator css-165vu30-MuiIconButton-loadingIndicator"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="DeleteIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6zM19 4h-3.5l-1-1h-5l-1 1H5v2h14z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
