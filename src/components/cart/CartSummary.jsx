@@ -23,22 +23,30 @@ const CartSummary = ({
   onCheckout,
   onContinueShopping
 }) => {
+  const formatAmount = (amount) => {
+    const nonNegativeAmount = Math.max(0, amount);
+    return `$${nonNegativeAmount.toLocaleString('en-US', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    })}`;
+  };
+
   return (
     <Card sx={{ position: { md: 'sticky' }, top: { md: '24px' } }}>
       <CardHeader title="Order Summary" />
       <Divider />
       <CardContent>
         <Stack spacing={2}>
-          <CartSummaryRow label="Subtotal" value={`$${subtotal.toFixed(2)}`} />
+          <CartSummaryRow label="Subtotal" value={formatAmount(subtotal)} />
           <CartSummaryRow
             label="Shipping"
-            value={shipping === 0 ? 'Free' : `$${shipping.toFixed(2)}`}
+            value={shipping === 0 ? 'Free' : formatAmount(shipping)}
           />
-          <CartSummaryRow label="Estimated tax" value={`$${taxes.toFixed(2)}`} />
+          <CartSummaryRow label="Estimated tax" value={formatAmount(taxes)} />
           <Divider />
           <CartSummaryRow
             label="Total"
-            value={`$${finalTotal.toFixed(2)}`}
+            value={formatAmount(finalTotal)}
             variant="h6"
             labelColor="text.primary"
           />
