@@ -7,8 +7,6 @@ import { Card, CardActions, CardContent, CardMedia, Grid, Typography } from '@mu
 import { OutlinedButton } from '../buttons/OutlinedButton';
 import { ContainedButton } from '../buttons/ContainedButton';
 
-
-
 const ProductCard = ({ product }) => {
   if (!product) {
     return null;
