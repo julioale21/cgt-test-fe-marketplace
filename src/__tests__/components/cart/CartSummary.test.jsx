@@ -3,7 +3,6 @@ import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { CartSummary } from '../../../components';
 
-
 describe('CartSummary', () => {
   const defaultProps = {
     subtotal: 99.99,
@@ -13,6 +12,11 @@ describe('CartSummary', () => {
     onCheckout: jest.fn(),
     onContinueShopping: jest.fn()
   };
+
+  it('matches snapshot', () => {
+    const { container } = render(<CartSummary {...defaultProps} />);
+    expect(container).toMatchSnapshot();
+  });
 
   it('renders all components correctly', () => {
     render(<CartSummary {...defaultProps} />);
