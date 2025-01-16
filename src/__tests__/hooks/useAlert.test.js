@@ -1,7 +1,6 @@
 import { renderHook, act } from '@testing-library/react';
 import { useAlert } from '../../hooks/useAlert';
 
-
 describe('useAlert', () => {
   it('should initialize with default values', () => {
     const { result } = renderHook(() => useAlert());
