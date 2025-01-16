@@ -1,42 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CartHeader matches snapshot with multiple items 1`] = `
-<div>
-  <div
-    class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
-  >
-    <div
-      class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
-    >
-      <span
-        class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-16xl4zq-MuiTypography-root"
-      >
-        <div
-          class="MuiBox-root css-69i1ev"
-        >
-          <h6
-            class="MuiTypography-root MuiTypography-h6 css-1miy0lu-MuiTypography-root"
-          >
-            Shopping Cart (
-            3
-             items)
-          </h6>
-          <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary css-133o6ou-MuiButtonBase-root-MuiButton-root"
-            id=":r1:"
-            tabindex="0"
-            type="button"
-          >
-            Clear Cart
-          </button>
-        </div>
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`CartHeader matches snapshot with single item 1`] = `
+exports[`CartHeader should match snapshot when displaying a single item 1`] = `
 <div>
   <div
     class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
@@ -60,6 +24,42 @@ exports[`CartHeader matches snapshot with single item 1`] = `
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary css-133o6ou-MuiButtonBase-root-MuiButton-root"
             id=":r0:"
+            tabindex="0"
+            type="button"
+          >
+            Clear Cart
+          </button>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CartHeader should match snapshot when displaying multiple items 1`] = `
+<div>
+  <div
+    class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"
+  >
+    <div
+      class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"
+    >
+      <span
+        class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-16xl4zq-MuiTypography-root"
+      >
+        <div
+          class="MuiBox-root css-69i1ev"
+        >
+          <h6
+            class="MuiTypography-root MuiTypography-h6 css-1miy0lu-MuiTypography-root"
+          >
+            Shopping Cart (
+            3
+             items)
+          </h6>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary css-133o6ou-MuiButtonBase-root-MuiButton-root"
+            id=":r1:"
             tabindex="0"
             type="button"
           >

@@ -8,13 +8,18 @@ describe('PaymentMethodIcon', () => {
     alt: 'Test payment method'
   };
 
-  it('matches snapshot', () => {
-    const { container } = render(<PaymentMethodIcon {...defaultProps} />);
+  it('should match snapshot', () => {
+    const props = { ...defaultProps };
+
+    const { container } = render(<PaymentMethodIcon {...props} />);
+
     expect(container).toMatchSnapshot();
   });
 
-  it('renders with default size', () => {
-    render(<PaymentMethodIcon {...defaultProps} />);
+  it('should render with default size of 60px', () => {
+    const props = { ...defaultProps };
+
+    render(<PaymentMethodIcon {...props} />);
     const img = screen.getByRole('img');
 
     expect(img).toHaveStyle({
@@ -23,8 +28,10 @@ describe('PaymentMethodIcon', () => {
     });
   });
 
-  it('applies custom size within valid range', () => {
-    render(<PaymentMethodIcon {...defaultProps} size={100} />);
+  it('should apply custom size when within valid range', () => {
+    const props = { ...defaultProps, size: 100 };
+
+    render(<PaymentMethodIcon {...props} />);
     const img = screen.getByRole('img');
 
     expect(img).toHaveStyle({
@@ -33,8 +40,10 @@ describe('PaymentMethodIcon', () => {
     });
   });
 
-  it('clamps size to minimum value', () => {
-    render(<PaymentMethodIcon {...defaultProps} size={10} />);
+  it('should clamp size to minimum value of 20px', () => {
+    const props = { ...defaultProps, size: 10 };
+
+    render(<PaymentMethodIcon {...props} />);
     const img = screen.getByRole('img');
 
     expect(img).toHaveStyle({
@@ -43,8 +52,10 @@ describe('PaymentMethodIcon', () => {
     });
   });
 
-  it('clamps size to maximum value', () => {
-    render(<PaymentMethodIcon {...defaultProps} size={300} />);
+  it('should clamp size to maximum value of 200px', () => {
+    const props = { ...defaultProps, size: 300 };
+
+    render(<PaymentMethodIcon {...props} />);
     const img = screen.getByRole('img');
 
     expect(img).toHaveStyle({
@@ -53,20 +64,23 @@ describe('PaymentMethodIcon', () => {
     });
   });
 
-  it('returns null when src is not provided', () => {
+  it('should return null and warn when src is not provided', () => {
     const consoleSpy = jest.spyOn(console, 'warn').mockImplementation(() => {});
-    const { container } = render(<PaymentMethodIcon alt="Test" />);
+    const props = { alt: 'Test' };
+
+    const { container } = render(<PaymentMethodIcon {...props} />);
 
     expect(container.firstChild).toBeNull();
     expect(consoleSpy).toHaveBeenCalledWith(
       'PaymentMethodIcon: src prop is required for proper rendering'
     );
-
     consoleSpy.mockRestore();
   });
 
-  it('applies grayscale filter and opacity by default', () => {
-    render(<PaymentMethodIcon {...defaultProps} />);
+  it('should apply default grayscale filter and opacity', () => {
+    const props = { ...defaultProps };
+
+    render(<PaymentMethodIcon {...props} />);
     const img = screen.getByRole('img');
 
     expect(img).toHaveStyle({
@@ -75,15 +89,19 @@ describe('PaymentMethodIcon', () => {
     });
   });
 
-  it('includes hover opacity styles', () => {
-    const { container } = render(<PaymentMethodIcon {...defaultProps} />);
+  it('should include hover opacity styles', () => {
+    const props = { ...defaultProps };
+
+    const { container } = render(<PaymentMethodIcon {...props} />);
     const styles = window.getComputedStyle(container.firstChild);
 
     expect(styles).toBeDefined();
   });
 
-  it('maintains object-fit contain property', () => {
-    render(<PaymentMethodIcon {...defaultProps} />);
+  it('should maintain object-fit contain property', () => {
+    const props = { ...defaultProps };
+
+    render(<PaymentMethodIcon {...props} />);
     const img = screen.getByRole('img');
 
     expect(img).toHaveStyle({

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Product matches snapshot with invalid product 1`] = `
+exports[`Product should match snapshot with invalid product 1`] = `
 <div>
   <div
     class="MuiContainer-root MuiContainer-maxWidthLg css-xsov46-MuiContainer-root"
@@ -15,7 +15,7 @@ exports[`Product matches snapshot with invalid product 1`] = `
 </div>
 `;
 
-exports[`Product matches snapshot with valid product 1`] = `
+exports[`Product should match snapshot with valid product 1`] = `
 <div>
   <div
     class="MuiContainer-root MuiContainer-maxWidthLg css-xsov46-MuiContainer-root"

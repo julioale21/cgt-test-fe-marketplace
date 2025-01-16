@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ProductSpecs matches snapshot 1`] = `
+exports[`ProductSpecs should match snapshot 1`] = `
 <div>
   <ul
     class="MuiList-root MuiList-padding css-b7dj7n-MuiList-root"

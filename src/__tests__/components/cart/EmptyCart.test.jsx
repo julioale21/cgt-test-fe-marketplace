@@ -3,47 +3,65 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { EmptyCart } from '../../../components';
 
-
 describe('EmptyCart', () => {
   const defaultProps = {
     onContinueShopping: jest.fn()
   };
 
-  it('matches snapshot', () => {
-    const { container } = render(<EmptyCart {...defaultProps} />);
+  it('should match snapshot', () => {
+    const props = { ...defaultProps };
+
+    const { container } = render(<EmptyCart {...props} />);
+
     expect(container).toMatchSnapshot();
   });
 
-  it('displays empty cart message', () => {
-    render(<EmptyCart {...defaultProps} />);
+  it('should display empty cart message', () => {
+    const props = { ...defaultProps };
+
+    render(<EmptyCart {...props} />);
+
     expect(screen.getByText('Your cart is empty')).toBeInTheDocument();
   });
 
-  it('renders shopping cart icon', () => {
-    render(<EmptyCart {...defaultProps} />);
+  it('should render shopping cart icon', () => {
+    const props = { ...defaultProps };
+
+    render(<EmptyCart {...props} />);
+
     expect(screen.getByTestId('ShoppingCartIcon')).toBeInTheDocument();
   });
 
-  it('renders continue shopping button with correct text', () => {
-    render(<EmptyCart {...defaultProps} />);
+  it('should render continue shopping button with correct text', () => {
+    const props = { ...defaultProps };
+
+    render(<EmptyCart {...props} />);
+
     expect(screen.getByText('Continue Shopping')).toBeInTheDocument();
   });
 
-  it('renders back arrow icon in button', () => {
-    render(<EmptyCart {...defaultProps} />);
+  it('should render back arrow icon in button', () => {
+    const props = { ...defaultProps };
+
+    render(<EmptyCart {...props} />);
+
     expect(screen.getByTestId('ArrowBackIcon')).toBeInTheDocument();
   });
 
-  it('calls onContinueShopping when button is clicked', async () => {
-    render(<EmptyCart {...defaultProps} />);
+  it('should call onContinueShopping when button is clicked', async () => {
+    const props = { ...defaultProps };
     const user = userEvent.setup();
 
+    render(<EmptyCart {...props} />);
     await user.click(screen.getByText('Continue Shopping'));
-    expect(defaultProps.onContinueShopping).toHaveBeenCalledTimes(1);
+
+    expect(props.onContinueShopping).toHaveBeenCalledTimes(1);
   });
 
-  it('renders card with correct max width', () => {
-    render(<EmptyCart {...defaultProps} />);
+  it('should render card with correct max width', () => {
+    const props = { ...defaultProps };
+
+    render(<EmptyCart {...props} />);
     const card = screen.getByText('Your cart is empty').closest('.MuiCard-root');
 
     expect(card).toHaveStyle({

@@ -13,25 +13,34 @@ const renderProductList = (props = {}) => {
 };
 
 describe('ProductList', () => {
-  it('matches snapshot with products', () => {
+  it('should match snapshot with products', () => {
+    const props = { products };
+
     const { container } = render(
       <BrowserRouter>
-        <ProductList products={products} />
+        <ProductList {...props} />
       </BrowserRouter>
     );
+
     expect(container).toMatchSnapshot();
   });
 
-  it('matches snapshot with empty products', () => {
+  it('should match snapshot with empty products array', () => {
+    const props = { products: [] };
+
     const { container } = render(
       <BrowserRouter>
-        <ProductList products={[]} />
+        <ProductList {...props} />
       </BrowserRouter>
     );
+
     expect(container).toMatchSnapshot();
   });
-  it('renders all products', () => {
-    renderProductList();
+
+  it('should render all product information correctly', () => {
+    const props = { products };
+
+    renderProductList(props);
 
     products.forEach((product) => {
       expect(screen.getByText(product.name)).toBeInTheDocument();
@@ -40,20 +49,28 @@ describe('ProductList', () => {
     });
   });
 
-  it('renders correct number of ProductCard components', () => {
-    renderProductList();
+  it('should render correct number of ProductCard components', () => {
+    const props = { products };
+
+    renderProductList(props);
 
     const productCards = screen.getAllByRole('img');
     expect(productCards).toHaveLength(products.length);
   });
 
-  it('returns null when products array is empty', () => {
-    const { container } = render(<ProductList products={[]} />);
+  it('should return null when products array is empty', () => {
+    const props = { products: [] };
+
+    const { container } = render(<ProductList {...props} />);
+
     expect(container).toBeEmptyDOMElement();
   });
 
-  it('returns null when products is null', () => {
-    const { container } = render(<ProductList products={null} />);
+  it('should return null when products is null', () => {
+    const props = { products: null };
+
+    const { container } = render(<ProductList {...props} />);
+
     expect(container).toBeEmptyDOMElement();
   });
 });

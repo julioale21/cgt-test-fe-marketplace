@@ -4,8 +4,6 @@ import { useProduct } from '../../hooks/useProduct';
 import { products } from '../../constants/products';
 import { useCart } from '../../hooks/useCart';
 
-
-// Mock the dependent hooks
 jest.mock('react-router-dom', () => ({
   useParams: jest.fn()
 }));
@@ -18,7 +16,6 @@ describe('useProduct', () => {
   const mockAddToCart = jest.fn();
   
   beforeEach(() => {
-    // Setup default mock implementations
     useParams.mockReturnValue({ productId: '1' });
     useCart.mockReturnValue({
       addToCart: mockAddToCart,

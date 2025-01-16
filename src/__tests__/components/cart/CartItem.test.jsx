@@ -19,49 +19,61 @@ describe('CartItem', () => {
     onRemove: jest.fn()
   };
 
-  it('matches snapshot', () => {
-    const { container } = render(<CartItem {...defaultProps} />);
+  it('should match snapshot', () => {
+    const props = { ...defaultProps };
+
+    const { container } = render(<CartItem {...props} />);
+
     expect(container).toMatchSnapshot();
   });
 
-  it('displays item details correctly', () => {
-    render(<CartItem {...defaultProps} />);
+  it('should display all item details correctly', () => {
+    const props = { ...defaultProps };
+
+    render(<CartItem {...props} />);
 
     expect(screen.getByText(mockItem.name)).toBeInTheDocument();
     expect(screen.getByText(`$${mockItem.price.toFixed(2)}`)).toBeInTheDocument();
     expect(screen.getByText(mockItem.quantity.toString())).toBeInTheDocument();
-
     const image = screen.getByRole('img');
     expect(image).toHaveAttribute('src', mockItem.image);
     expect(image).toHaveAttribute('alt', mockItem.name);
   });
 
-  it('calls onIncrement when plus button is clicked', async () => {
-    render(<CartItem {...defaultProps} />);
+  it('should call onIncrement when plus button is clicked', async () => {
+    const props = { ...defaultProps };
     const user = userEvent.setup();
 
+    render(<CartItem {...props} />);
     await user.click(screen.getByTestId('AddIcon').parentElement);
-    expect(defaultProps.onIncrement).toHaveBeenCalledTimes(1);
+
+    expect(props.onIncrement).toHaveBeenCalledTimes(1);
   });
 
-  it('calls onDecrement when minus button is clicked', async () => {
-    render(<CartItem {...defaultProps} />);
+  it('should call onDecrement when minus button is clicked', async () => {
+    const props = { ...defaultProps };
     const user = userEvent.setup();
 
+    render(<CartItem {...props} />);
     await user.click(screen.getByTestId('RemoveIcon').parentElement);
-    expect(defaultProps.onDecrement).toHaveBeenCalledTimes(1);
+
+    expect(props.onDecrement).toHaveBeenCalledTimes(1);
   });
 
-  it('calls onRemove when delete button is clicked', async () => {
-    render(<CartItem {...defaultProps} />);
+  it('should call onRemove when delete button is clicked', async () => {
+    const props = { ...defaultProps };
     const user = userEvent.setup();
 
+    render(<CartItem {...props} />);
     await user.click(screen.getByTestId('DeleteIcon').parentElement);
-    expect(defaultProps.onRemove).toHaveBeenCalledTimes(1);
+
+    expect(props.onRemove).toHaveBeenCalledTimes(1);
   });
 
-  it('applies correct styles to the image', () => {
-    render(<CartItem {...defaultProps} />);
+  it('should apply correct styles to the image', () => {
+    const props = { ...defaultProps };
+
+    render(<CartItem {...props} />);
     const image = screen.getByRole('img');
 
     expect(image).toHaveStyle({
@@ -71,8 +83,10 @@ describe('CartItem', () => {
     });
   });
 
-  it('applies small size to all icon buttons', () => {
-    render(<CartItem {...defaultProps} />);
+  it('should apply small size to all icon buttons', () => {
+    const props = { ...defaultProps };
+
+    render(<CartItem {...props} />);
     const buttons = screen.getAllByRole('button');
 
     buttons.forEach((button) => {
@@ -80,15 +94,19 @@ describe('CartItem', () => {
     });
   });
 
-  it('applies error color to delete button', () => {
-    render(<CartItem {...defaultProps} />);
+  it('should apply error color to delete button', () => {
+    const props = { ...defaultProps };
+
+    render(<CartItem {...props} />);
     const deleteButton = screen.getByTestId('DeleteIcon').parentElement;
 
     expect(deleteButton).toHaveClass('MuiIconButton-colorError');
   });
 
-  it('centers quantity display', () => {
-    render(<CartItem {...defaultProps} />);
+  it('should center quantity display', () => {
+    const props = { ...defaultProps };
+
+    render(<CartItem {...props} />);
     const quantityElement = screen.getByText(mockItem.quantity.toString());
 
     expect(quantityElement).toHaveStyle({
@@ -97,24 +115,28 @@ describe('CartItem', () => {
     });
   });
 
-  it('formats price with 2 decimal places', () => {
+  it('should format price with 2 decimal places', () => {
     const itemWithLongPrice = {
       ...mockItem,
       price: 29.9999
     };
+    const props = { ...defaultProps, item: itemWithLongPrice };
 
-    render(<CartItem {...defaultProps} item={itemWithLongPrice} />);
+    render(<CartItem {...props} />);
+
     expect(screen.getByText('$30.00')).toBeInTheDocument();
   });
 
-  it('handles missing image gracefully', () => {
+  it('should handle missing image gracefully', () => {
     const itemWithoutImage = {
       ...mockItem,
       image: ''
     };
+    const props = { ...defaultProps, item: itemWithoutImage };
 
-    render(<CartItem {...defaultProps} item={itemWithoutImage} />);
+    render(<CartItem {...props} />);
     const image = screen.getByRole('img');
+
     expect(image).toHaveAttribute('src', '');
     expect(image).toBeInTheDocument();
   });

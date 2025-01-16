@@ -3,8 +3,6 @@ import { useContext } from 'react';
 import { CartContext } from '../../../context/cart/cartContext';
 import { CartProvider } from '../../../context/cart/cartProvider';
 
-
-// Componente de prueba que usa el contexto
 const TestComponent = ({ onMount }) => {
   const context = useContext(CartContext);
   onMount(context);

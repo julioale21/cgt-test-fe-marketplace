@@ -1,0 +1,779 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should match snapshot 1`] = `
+<div>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg css-g49q35-MuiContainer-root"
+  >
+    <h1
+      class="MuiTypography-root MuiTypography-h3 css-xw7xb7-MuiTypography-root"
+    >
+      3D Marketplace
+    </h1>
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-4z7gnm-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-14j1sok-MuiGrid-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-em32m3-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+        >
+          <img
+            alt="3D Modern Chair"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-qapfwi-MuiCardMedia-root"
+            height="200"
+            src="3d-chair.jpg"
+          />
+          <div
+            class="MuiCardContent-root css-x4lmbv-MuiCardContent-root"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+            >
+              3D Modern Chair
+            </h2>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+            >
+              High-quality 3D model of a modern minimalist chair, perfect for architectural visualization.
+            </p>
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-11ary1m-MuiTypography-root"
+            >
+              $
+              149.99
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Rating: 
+              4.5
+              /5
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Polygons: 
+              24k
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Textures: 
+              4K PBR
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-tmy7vb-MuiTypography-root"
+            >
+              Formats: 
+              FBX, OBJ, MAX
+            </p>
+          </div>
+          <div
+            class="MuiCardActions-root MuiCardActions-spacing css-ksj18d-MuiCardActions-root"
+          >
+            <a
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-1tzdgtk-MuiButtonBase-root-MuiButton-root"
+              href="/products/1"
+              id=":r0:"
+              tabindex="0"
+            >
+              View Details
+            </a>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-uwf23-MuiButtonBase-root-MuiButton-root"
+              id=":r1:"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium css-1sh91j5-MuiButton-startIcon"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wdc28j-MuiSvgIcon-root"
+                  data-testid="ShoppingCartIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2M1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2"
+                  />
+                </svg>
+              </span>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-14j1sok-MuiGrid-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-em32m3-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+        >
+          <img
+            alt="Sci-Fi Spaceship"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-qapfwi-MuiCardMedia-root"
+            height="200"
+            src="sci-fi.jpg"
+          />
+          <div
+            class="MuiCardContent-root css-x4lmbv-MuiCardContent-root"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+            >
+              Sci-Fi Spaceship
+            </h2>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+            >
+              Detailed sci-fi spacecraft model with interior details and animated components.
+            </p>
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-11ary1m-MuiTypography-root"
+            >
+              $
+              299.99
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Rating: 
+              4.8
+              /5
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Polygons: 
+              150k
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Textures: 
+              8K PBR
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-tmy7vb-MuiTypography-root"
+            >
+              Formats: 
+              FBX, OBJ, BLEND
+            </p>
+          </div>
+          <div
+            class="MuiCardActions-root MuiCardActions-spacing css-ksj18d-MuiCardActions-root"
+          >
+            <a
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-1tzdgtk-MuiButtonBase-root-MuiButton-root"
+              href="/products/2"
+              id=":r2:"
+              tabindex="0"
+            >
+              View Details
+            </a>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-uwf23-MuiButtonBase-root-MuiButton-root"
+              id=":r3:"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium css-1sh91j5-MuiButton-startIcon"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wdc28j-MuiSvgIcon-root"
+                  data-testid="ShoppingCartIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2M1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2"
+                  />
+                </svg>
+              </span>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-14j1sok-MuiGrid-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-em32m3-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+        >
+          <img
+            alt="Medieval Castle"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-qapfwi-MuiCardMedia-root"
+            height="200"
+            src="medieval-castle.jpg"
+          />
+          <div
+            class="MuiCardContent-root css-x4lmbv-MuiCardContent-root"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+            >
+              Medieval Castle
+            </h2>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+            >
+              Historically accurate medieval castle with full interior and exterior details.
+            </p>
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-11ary1m-MuiTypography-root"
+            >
+              $
+              399.99
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Rating: 
+              4.7
+              /5
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Polygons: 
+              500k
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Textures: 
+              8K PBR
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-tmy7vb-MuiTypography-root"
+            >
+              Formats: 
+              FBX, OBJ, MAX
+            </p>
+          </div>
+          <div
+            class="MuiCardActions-root MuiCardActions-spacing css-ksj18d-MuiCardActions-root"
+          >
+            <a
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-1tzdgtk-MuiButtonBase-root-MuiButton-root"
+              href="/products/3"
+              id=":r4:"
+              tabindex="0"
+            >
+              View Details
+            </a>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-uwf23-MuiButtonBase-root-MuiButton-root"
+              id=":r5:"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium css-1sh91j5-MuiButton-startIcon"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wdc28j-MuiSvgIcon-root"
+                  data-testid="ShoppingCartIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2M1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2"
+                  />
+                </svg>
+              </span>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-14j1sok-MuiGrid-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-em32m3-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+        >
+          <img
+            alt="Tropical Plant Pack"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-qapfwi-MuiCardMedia-root"
+            height="200"
+            src="palm-tree.jpg"
+          />
+          <div
+            class="MuiCardContent-root css-x4lmbv-MuiCardContent-root"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+            >
+              Tropical Plant Pack
+            </h2>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+            >
+              Collection of 20 high-quality tropical plants and trees with seasonal variations.
+            </p>
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-11ary1m-MuiTypography-root"
+            >
+              $
+              79.99
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Rating: 
+              4.6
+              /5
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Polygons: 
+              15k per model
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Textures: 
+              4K PBR
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-tmy7vb-MuiTypography-root"
+            >
+              Formats: 
+              FBX, OBJ, C4D
+            </p>
+          </div>
+          <div
+            class="MuiCardActions-root MuiCardActions-spacing css-ksj18d-MuiCardActions-root"
+          >
+            <a
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-1tzdgtk-MuiButtonBase-root-MuiButton-root"
+              href="/products/4"
+              id=":r6:"
+              tabindex="0"
+            >
+              View Details
+            </a>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-uwf23-MuiButtonBase-root-MuiButton-root"
+              id=":r7:"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium css-1sh91j5-MuiButton-startIcon"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wdc28j-MuiSvgIcon-root"
+                  data-testid="ShoppingCartIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2M1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2"
+                  />
+                </svg>
+              </span>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-14j1sok-MuiGrid-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-em32m3-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+        >
+          <img
+            alt="Sports Car Concept"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-qapfwi-MuiCardMedia-root"
+            height="200"
+            src="sport-car.jpg"
+          />
+          <div
+            class="MuiCardContent-root css-x4lmbv-MuiCardContent-root"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+            >
+              Sports Car Concept
+            </h2>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+            >
+              High-performance sports car with detailed interior and customizable parts.
+            </p>
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-11ary1m-MuiTypography-root"
+            >
+              $
+              249.99
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Rating: 
+              4.9
+              /5
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Polygons: 
+              200k
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Textures: 
+              8K PBR
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-tmy7vb-MuiTypography-root"
+            >
+              Formats: 
+              FBX, OBJ, MAX
+            </p>
+          </div>
+          <div
+            class="MuiCardActions-root MuiCardActions-spacing css-ksj18d-MuiCardActions-root"
+          >
+            <a
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-1tzdgtk-MuiButtonBase-root-MuiButton-root"
+              href="/products/5"
+              id=":r8:"
+              tabindex="0"
+            >
+              View Details
+            </a>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-uwf23-MuiButtonBase-root-MuiButton-root"
+              id=":r9:"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium css-1sh91j5-MuiButton-startIcon"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wdc28j-MuiSvgIcon-root"
+                  data-testid="ShoppingCartIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2M1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2"
+                  />
+                </svg>
+              </span>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-14j1sok-MuiGrid-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-em32m3-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+        >
+          <img
+            alt="Game Character Hero"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-qapfwi-MuiCardMedia-root"
+            height="200"
+            src="game-character.jpg"
+          />
+          <div
+            class="MuiCardContent-root css-x4lmbv-MuiCardContent-root"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+            >
+              Game Character Hero
+            </h2>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+            >
+              Fully rigged game character with multiple animations and customizable outfits.
+            </p>
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-11ary1m-MuiTypography-root"
+            >
+              $
+              179.99
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Rating: 
+              4.7
+              /5
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Polygons: 
+              85k
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Textures: 
+              4K PBR
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-tmy7vb-MuiTypography-root"
+            >
+              Formats: 
+              FBX, OBJ, BLEND
+            </p>
+          </div>
+          <div
+            class="MuiCardActions-root MuiCardActions-spacing css-ksj18d-MuiCardActions-root"
+          >
+            <a
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-1tzdgtk-MuiButtonBase-root-MuiButton-root"
+              href="/products/6"
+              id=":ra:"
+              tabindex="0"
+            >
+              View Details
+            </a>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-uwf23-MuiButtonBase-root-MuiButton-root"
+              id=":rb:"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium css-1sh91j5-MuiButton-startIcon"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wdc28j-MuiSvgIcon-root"
+                  data-testid="ShoppingCartIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2M1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2"
+                  />
+                </svg>
+              </span>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-14j1sok-MuiGrid-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-em32m3-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+        >
+          <img
+            alt="Modern Kitchen Set"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-qapfwi-MuiCardMedia-root"
+            height="200"
+            src="modern-kitchen.jpeg"
+          />
+          <div
+            class="MuiCardContent-root css-x4lmbv-MuiCardContent-root"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+            >
+              Modern Kitchen Set
+            </h2>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+            >
+              Complete modern kitchen set with appliances and customizable materials.
+            </p>
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-11ary1m-MuiTypography-root"
+            >
+              $
+              199.99
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Rating: 
+              4.8
+              /5
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Polygons: 
+              300k
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Textures: 
+              8K PBR
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-tmy7vb-MuiTypography-root"
+            >
+              Formats: 
+              FBX, OBJ, MAX
+            </p>
+          </div>
+          <div
+            class="MuiCardActions-root MuiCardActions-spacing css-ksj18d-MuiCardActions-root"
+          >
+            <a
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-1tzdgtk-MuiButtonBase-root-MuiButton-root"
+              href="/products/7"
+              id=":rc:"
+              tabindex="0"
+            >
+              View Details
+            </a>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-uwf23-MuiButtonBase-root-MuiButton-root"
+              id=":rd:"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium css-1sh91j5-MuiButton-startIcon"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wdc28j-MuiSvgIcon-root"
+                  data-testid="ShoppingCartIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2M1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2"
+                  />
+                </svg>
+              </span>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-14j1sok-MuiGrid-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-em32m3-MuiPaper-root-MuiCard-root"
+          style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+        >
+          <img
+            alt="Industrial Robot Arm"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-qapfwi-MuiCardMedia-root"
+            height="200"
+            src="robot.jpg"
+          />
+          <div
+            class="MuiCardContent-root css-x4lmbv-MuiCardContent-root"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+            >
+              Industrial Robot Arm
+            </h2>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"
+            >
+              Detailed industrial robot arm with fully animated joints and control rig.
+            </p>
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-11ary1m-MuiTypography-root"
+            >
+              $
+              159.99
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Rating: 
+              4.6
+              /5
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Polygons: 
+              120k
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Textures: 
+              4K PBR
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-tmy7vb-MuiTypography-root"
+            >
+              Formats: 
+              FBX, OBJ, BLEND
+            </p>
+          </div>
+          <div
+            class="MuiCardActions-root MuiCardActions-spacing css-ksj18d-MuiCardActions-root"
+          >
+            <a
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-1tzdgtk-MuiButtonBase-root-MuiButton-root"
+              href="/products/8"
+              id=":re:"
+              tabindex="0"
+            >
+              View Details
+            </a>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-uwf23-MuiButtonBase-root-MuiButton-root"
+              id=":rf:"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium css-1sh91j5-MuiButton-startIcon"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wdc28j-MuiSvgIcon-root"
+                  data-testid="ShoppingCartIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2M1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2"
+                  />
+                </svg>
+              </span>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
