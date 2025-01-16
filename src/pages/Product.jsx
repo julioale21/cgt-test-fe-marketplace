@@ -9,6 +9,15 @@ const Product = () => {
   const { product, isInCart, handleAddToCart } = useProduct();
   const { alert, showAlert, hideAlert } = useAlert();
 
+  const onAddToCart = (quantity) => {
+    const success = handleAddToCart(quantity);
+    if (success) {
+      showAlert(
+        `${quantity} ${quantity === 1 ? 'unit' : 'units'} of ${product.name} added to cart!`
+      );
+    }
+  };
+
   if (!product) {
     return (
       <Container
@@ -36,13 +45,6 @@ const Product = () => {
       </Container>
     );
   }
-
-  const onAddToCart = () => {
-    const success = handleAddToCart();
-    if (success) {
-      showAlert(`${product.name} added to cart!`);
-    }
-  };
 
   return (
     <Container

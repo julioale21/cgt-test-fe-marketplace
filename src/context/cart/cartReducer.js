@@ -3,28 +3,29 @@ import { CART_ACTIONS } from './types';
 export const cartReducer = (state, action) => {
   switch (action.type) {
     case CART_ACTIONS.ADD_TO_CART: {
+      const { product, quantity = 1 } = action.payload;
       const existingItem = state.items.find(
-        (item) => item.id === action.payload.id
+        (item) => item.id === product.id
       );
-
+    
       if (existingItem) {
         const updatedItems = state.items.map((item) =>
-          item.id === action.payload.id
-            ? { ...item, quantity: item.quantity + 1 }
+          item.id === product.id
+            ? { ...item, quantity: item.quantity + quantity }
             : item
         );
-
+    
         return {
           ...state,
           items: updatedItems,
-          total: state.total + action.payload.price
+          total: state.total + (product.price * quantity)
         };
       }
-
+    
       return {
         ...state,
-        items: [...state.items, { ...action.payload, quantity: 1 }],
-        total: state.total + action.payload.price
+        items: [...state.items, { ...product, quantity }],
+        total: state.total + (product.price * quantity)
       };
     }
 

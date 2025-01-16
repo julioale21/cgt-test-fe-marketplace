@@ -6,10 +6,10 @@ import { CartContext } from './cartContext';
 export const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(cartReducer, initialState);
 
-  const addToCart = useCallback((product) => {
+  const addToCart = useCallback(({ product, quantity }) => {
     dispatch({ 
       type: CART_ACTIONS.ADD_TO_CART, 
-      payload: product 
+      payload: { product, quantity }
     });
   }, []);
 

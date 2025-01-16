@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
   const { id, name, price, description, image, format, rating, polygons, textures } = product;
 
   const handleAddToCart = () => {
-    addToCart(product);
+    addToCart({ product, quantity: 1 });
   };
 
   return (
@@ -58,7 +58,19 @@ const ProductCard = ({ product }) => {
               <Typography gutterBottom variant="h6" component="h2">
                 {name}
               </Typography>
-              <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                sx={{
+                  mb: 2,
+                  display: '-webkit-box',
+                  WebkitLineClamp: 2,
+                  WebkitBoxOrient: 'vertical',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                  height: '40px'
+                }}
+              >
                 {description}
               </Typography>
               <Typography variant="h6" color="primary" sx={{ mt: 2 }}>

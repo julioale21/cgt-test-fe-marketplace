@@ -1,6 +1,6 @@
-import { useParams } from 'react-router-dom';
-import { products } from '../constants/products';
-import { useCart } from './useCart';
+import { useParams } from "react-router-dom";
+import { products } from "../constants/products";
+import { useCart } from "./useCart";
 
 export const useProduct = () => {
   const { productId } = useParams();
@@ -9,9 +9,9 @@ export const useProduct = () => {
   const product = products.find((p) => p.id === parseInt(productId));
   const isInCart = items.some(item => item.id === product?.id);
   
-  const handleAddToCart = () => {
+  const handleAddToCart = (quantity = 1) => {
     if (product) {
-      addToCart(product);
+      addToCart({ product, quantity });
       return true;
     }
     return false;
