@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItemList matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiStack-root"
+    data-spacing="2"
+    data-testid="mui-stack"
+  >
+    <div
+      class="MuiPaper-root"
+      data-testid="cart-item-1"
+    >
+      <div>
+        <span>
+          3D Mountain Model
+        </span>
+        <span>
+          $
+          29.99
+        </span>
+        <button
+          data-testid="increment-1"
+        >
+          +
+        </button>
+        <span
+          data-testid="quantity-1"
+        >
+          1
+        </span>
+        <button
+          data-testid="decrement-1"
+        >
+          -
+        </button>
+        <button
+          data-testid="remove-1"
+        >
+          x
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root"
+      data-testid="cart-item-2"
+    >
+      <div>
+        <span>
+          3D Tree Model
+        </span>
+        <span>
+          $
+          19.99
+        </span>
+        <button
+          data-testid="increment-2"
+        >
+          +
+        </button>
+        <span
+          data-testid="quantity-2"
+        >
+          2
+        </span>
+        <button
+          data-testid="decrement-2"
+        >
+          -
+        </button>
+        <button
+          data-testid="remove-2"
+        >
+          x
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
