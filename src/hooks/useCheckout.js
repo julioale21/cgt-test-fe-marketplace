@@ -1,11 +1,11 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from './useCart';
-
 
 export const useCheckout = () => {
   const navigate = useNavigate();
   const { items, total, removeFromCart, updateQuantity, clearCart } = useCart();
+  const [paymentSuccess, setPaymentSuccess] = useState(false);
 
   const cartItemsCount = useMemo(() => 
     items.reduce((total, item) => total + item.quantity, 0),
@@ -39,10 +39,20 @@ export const useCheckout = () => {
   };
 
   const handleCheckout = () => {
-    alert('Checkout not yet implemented');
+    navigate('/checkout');
   };
 
   const handleContinueShopping = () => {
+    navigate('/');
+  };
+
+  const handlePaymentSuccess = (paymentData) => {
+    setPaymentSuccess(paymentData);
+    clearCart();
+  };
+
+  const handleCloseSuccessModal = () => {
+    setPaymentSuccess(false);
     navigate('/');
   };
 
@@ -55,6 +65,9 @@ export const useCheckout = () => {
     handleDecrement,
     handleCheckout,
     handleContinueShopping,
+    handlePaymentSuccess,
+    handleCloseSuccessModal,
+    paymentSuccess,
     clearCart,
     removeFromCart
   };

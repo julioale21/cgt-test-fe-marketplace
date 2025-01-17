@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrderSummary should match snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-1rr4qq7"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-2b7ht-MuiPaper-root"
+      style="--Paper-shadow: none;"
+    >
+      <h5
+        class="MuiTypography-root MuiTypography-h5 css-19hh0f1-MuiTypography-root"
+      >
+        Order Summary
+      </h5>
+      <div
+        class="MuiBox-root css-i3pbo"
+      >
+        <div
+          class="MuiBox-root css-6msto9"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-rounded css-15k0rve-MuiAvatar-root"
+          >
+            <img
+              class="MuiAvatar-img css-1su80sj-MuiAvatar-img"
+              src="test-image-1.jpg"
+            />
+          </div>
+          <div
+            class="MuiBox-root css-1rr4qq7"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap css-13k9d3g-MuiTypography-root"
+            >
+              Test Product 1
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Qty: 
+              2
+            </p>
+          </div>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-1ypmsg6-MuiTypography-root"
+          >
+            $
+            59.98
+          </h6>
+        </div>
+        <div
+          class="MuiBox-root css-6msto9"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-rounded css-15k0rve-MuiAvatar-root"
+          >
+            <img
+              class="MuiAvatar-img css-1su80sj-MuiAvatar-img"
+              src="test-image-2.jpg"
+            />
+          </div>
+          <div
+            class="MuiBox-root css-1rr4qq7"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap css-13k9d3g-MuiTypography-root"
+            >
+              Test Product 2
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+            >
+              Qty: 
+              1
+            </p>
+          </div>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-1ypmsg6-MuiTypography-root"
+          >
+            $
+            39.99
+          </h6>
+        </div>
+        <p
+          class="MuiTypography-root MuiTypography-body2 css-tmy7vb-MuiTypography-root"
+        >
+          And 
+          1
+           more items...
+        </p>
+      </div>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-1ouqunm-MuiDivider-root"
+      />
+      <div
+        class="MuiBox-root css-i3pbo"
+      >
+        <div
+          class="MuiBox-root css-3mllz6"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-k16oju-MuiTypography-root"
+          >
+            Subtotal
+          </p>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+          >
+            $
+            149.96
+          </p>
+        </div>
+        <div
+          class="MuiBox-root css-3mllz6"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-k16oju-MuiTypography-root"
+          >
+            Shipping
+          </p>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+          >
+            $
+            0.00
+          </p>
+        </div>
+        <div
+          class="MuiBox-root css-3mllz6"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-k16oju-MuiTypography-root"
+          >
+            Taxes
+          </p>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+          >
+            $
+            12.50
+          </p>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root css-1qu4ks8"
+      >
+        <h6
+          class="MuiTypography-root MuiTypography-h6 css-1miy0lu-MuiTypography-root"
+        >
+          Total
+        </h6>
+        <h6
+          class="MuiTypography-root MuiTypography-h6 css-1miy0lu-MuiTypography-root"
+        >
+          $
+          162.46
+        </h6>
+      </div>
+      <div
+        class="MuiBox-root css-h5fkc8"
+      >
+        <div
+          class="MuiBox-root css-127k144"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-1wtp6o0-MuiSvgIcon-root"
+            data-testid="LocalShippingIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5m13.5-9 1.96 2.5H17V9.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5"
+            />
+          </svg>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-1ypmsg6-MuiTypography-root"
+          >
+            Free Shipping
+          </h6>
+        </div>
+        <p
+          class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"
+        >
+          Estimated delivery: 3-5 business days
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
