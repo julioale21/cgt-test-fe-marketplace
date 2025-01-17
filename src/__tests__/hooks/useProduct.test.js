@@ -5,13 +5,11 @@ import { useCart } from '../../hooks/useCart';
 import { CartContext } from '../../context/cart/cartContext';
 import { useProduct } from '../../hooks/useProduct';
 
-// Mock react-router-dom
 jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom'),
   useParams: jest.fn()
 }));
 
-// Mock useCart hook
 jest.mock('../../hooks/useCart', () => ({
   useCart: jest.fn()
 }));

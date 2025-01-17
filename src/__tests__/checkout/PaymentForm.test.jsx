@@ -82,7 +82,6 @@ describe('PaymentForm', () => {
   it('should show all field-specific validation errors', async () => {
     render(<PaymentForm {...defaultProps} />);
 
-    // Enter invalid values
     await userEvent.type(screen.getByLabelText(/card holder name/i), 'Jo');
     await userEvent.type(screen.getByLabelText(/card number/i), '1234');
     await userEvent.type(screen.getByLabelText(/expiry date/i), '13/25');
@@ -90,7 +89,6 @@ describe('PaymentForm', () => {
     await userEvent.type(screen.getByLabelText(/email/i), 'invalid-email');
     await userEvent.type(screen.getByLabelText(/address/i), '123');
 
-    // Submit form to trigger validation
     fireEvent.click(screen.getByRole('button', { name: /pay/i }));
 
     await waitFor(() => {
@@ -106,7 +104,6 @@ describe('PaymentForm', () => {
   it('should clear validation errors when valid data is entered', async () => {
     render(<PaymentForm {...defaultProps} />);
 
-    // First show error
     await userEvent.type(screen.getByLabelText(/card number/i), '1234');
     fireEvent.click(screen.getByRole('button', { name: /pay/i }));
 
@@ -114,7 +111,6 @@ describe('PaymentForm', () => {
       expect(screen.getByText(/please enter a valid 16-digit card number/i)).toBeInTheDocument();
     });
 
-    // Then clear error with valid input
     await userEvent.clear(screen.getByLabelText(/card number/i));
     await userEvent.type(screen.getByLabelText(/card number/i), validFormData.cardNumber);
 
