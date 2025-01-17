@@ -3,39 +3,39 @@
 exports[`CartItem should match snapshot 1`] = `
 <div>
   <div
-    class="MuiBox-root css-1a3bafn"
+    class="MuiBox-root css-1qrcpvw"
   >
     <img
       alt="3D Mountain Model"
-      class="MuiBox-root css-15qlgw8"
+      class="MuiBox-root css-1rdmquv"
       src="/test-image.jpg"
     />
     <div
-      class="MuiBox-root css-123mfn9"
+      class="MuiBox-root css-1dvcde2"
     >
       <div
-        class="MuiBox-root css-1qdyvok"
+        class="MuiBox-root css-1pvjqgb"
       >
         <div
-          class="MuiBox-root css-0"
+          class="MuiBox-root css-1xhmi63"
         >
           <h6
-            class="MuiTypography-root MuiTypography-h6 css-6t4g7p-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-h6 css-8hk0ii-MuiTypography-root"
           >
             3D Mountain Model
           </h6>
           <h5
-            class="MuiTypography-root MuiTypography-h5 css-nqs171-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-h5 css-ckb6o2-MuiTypography-root"
           >
             $
             29.99
           </h5>
         </div>
         <div
-          class="MuiBox-root css-axw7ok"
+          class="MuiBox-root css-tpfl5a"
         >
           <button
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1mtjd4c-MuiButtonBase-root-MuiIconButton-root"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1iamo0-MuiButtonBase-root-MuiIconButton-root"
             id=":r0:"
             tabindex="0"
             type="button"
@@ -45,7 +45,7 @@ exports[`CartItem should match snapshot 1`] = `
             />
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-gx0v66-MuiSvgIcon-root"
               data-testid="RemoveIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -56,12 +56,12 @@ exports[`CartItem should match snapshot 1`] = `
             </svg>
           </button>
           <p
-            class="MuiTypography-root MuiTypography-body1 css-owqrw6-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-h5xjut-MuiTypography-root"
           >
             2
           </p>
           <button
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1mtjd4c-MuiButtonBase-root-MuiIconButton-root"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1iamo0-MuiButtonBase-root-MuiIconButton-root"
             id=":r1:"
             tabindex="0"
             type="button"
@@ -71,7 +71,7 @@ exports[`CartItem should match snapshot 1`] = `
             />
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-gx0v66-MuiSvgIcon-root"
               data-testid="AddIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -82,7 +82,7 @@ exports[`CartItem should match snapshot 1`] = `
             </svg>
           </button>
           <button
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorError MuiIconButton-sizeSmall css-n6oe2g-MuiButtonBase-root-MuiIconButton-root"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorError MuiIconButton-sizeSmall css-gf7rml-MuiButtonBase-root-MuiIconButton-root"
             id=":r2:"
             tabindex="0"
             type="button"
@@ -92,7 +92,7 @@ exports[`CartItem should match snapshot 1`] = `
             />
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-gx0v66-MuiSvgIcon-root"
               data-testid="DeleteIcon"
               focusable="false"
               viewBox="0 0 24 24"
