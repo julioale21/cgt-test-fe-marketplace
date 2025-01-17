@@ -108,12 +108,12 @@ describe('Cart', () => {
     expect(mockClearCart).toHaveBeenCalled();
   });
 
-  it('should show alert when checkout button is clicked', () => {
-    const mockAlert = jest.spyOn(window, 'alert').mockImplementation(() => {});
+  it('should navigate to checkout when checkout button is clicked', () => {
     renderCart(mockItems);
+
     fireEvent.click(screen.getByText('Continue to Checkout'));
-    expect(mockAlert).toHaveBeenCalledWith('Checkout not yet implemented');
-    mockAlert.mockRestore();
+
+    expect(mockNavigate).toHaveBeenCalledWith('/checkout');
   });
 
   it('should navigate to home when continue shopping is clicked', () => {

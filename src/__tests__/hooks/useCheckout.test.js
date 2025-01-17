@@ -81,15 +81,13 @@ describe('useCheckout', () => {
   });
 
   it('should handle checkout correctly', () => {
-    const mockAlert = jest.spyOn(window, 'alert').mockImplementation(() => {});
     const { result } = renderHook(() => useCheckout());
 
     act(() => {
       result.current.handleCheckout();
     });
 
-    expect(mockAlert).toHaveBeenCalledWith('Checkout not yet implemented');
-    mockAlert.mockRestore();
+    expect(mockNavigate).toHaveBeenCalledWith('/checkout');
   });
 
   it('should handle continue shopping correctly', () => {
