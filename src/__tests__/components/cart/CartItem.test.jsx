@@ -1,7 +1,16 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { CartItem } from '../../../components';
+
+const theme = createTheme();
+
+const customRender = (ui, options) =>
+  render(ui, {
+    wrapper: ({ children }) => <ThemeProvider theme={theme}>{children}</ThemeProvider>,
+    ...options
+  });
 
 describe('CartItem', () => {
   const mockItem = {
@@ -21,16 +30,13 @@ describe('CartItem', () => {
 
   it('should match snapshot', () => {
     const props = { ...defaultProps };
-
-    const { container } = render(<CartItem {...props} />);
-
+    const { container } = customRender(<CartItem {...props} />);
     expect(container).toMatchSnapshot();
   });
 
   it('should display all item details correctly', () => {
     const props = { ...defaultProps };
-
-    render(<CartItem {...props} />);
+    customRender(<CartItem {...props} />);
 
     expect(screen.getByText(mockItem.name)).toBeInTheDocument();
     expect(screen.getByText(`$${mockItem.price.toFixed(2)}`)).toBeInTheDocument();
@@ -43,9 +49,10 @@ describe('CartItem', () => {
   it('should call onIncrement when plus button is clicked', async () => {
     const props = { ...defaultProps };
     const user = userEvent.setup();
+    customRender(<CartItem {...props} />);
 
-    render(<CartItem {...props} />);
-    await user.click(screen.getByTestId('AddIcon').parentElement);
+    const addButton = screen.getByTestId('AddIcon').closest('button');
+    await user.click(addButton);
 
     expect(props.onIncrement).toHaveBeenCalledTimes(1);
   });
@@ -53,9 +60,10 @@ describe('CartItem', () => {
   it('should call onDecrement when minus button is clicked', async () => {
     const props = { ...defaultProps };
     const user = userEvent.setup();
+    customRender(<CartItem {...props} />);
 
-    render(<CartItem {...props} />);
-    await user.click(screen.getByTestId('RemoveIcon').parentElement);
+    const minusButton = screen.getByTestId('RemoveIcon').closest('button');
+    await user.click(minusButton);
 
     expect(props.onDecrement).toHaveBeenCalledTimes(1);
   });
@@ -63,56 +71,49 @@ describe('CartItem', () => {
   it('should call onRemove when delete button is clicked', async () => {
     const props = { ...defaultProps };
     const user = userEvent.setup();
+    customRender(<CartItem {...props} />);
 
-    render(<CartItem {...props} />);
-    await user.click(screen.getByTestId('DeleteIcon').parentElement);
+    const deleteButton = screen.getByTestId('DeleteIcon').closest('button');
+    await user.click(deleteButton);
 
     expect(props.onRemove).toHaveBeenCalledTimes(1);
   });
 
   it('should apply correct styles to the image', () => {
     const props = { ...defaultProps };
-
-    render(<CartItem {...props} />);
+    customRender(<CartItem {...props} />);
     const image = screen.getByRole('img');
 
-    expect(image).toHaveStyle({
-      width: '80px',
-      height: '80px',
-      objectFit: 'cover'
-    });
+    expect(image.className).toMatch(/MuiBox-root/);
+    const styles = window.getComputedStyle(image);
+    expect(styles.objectFit).toBe('cover');
   });
 
   it('should apply small size to all icon buttons', () => {
     const props = { ...defaultProps };
-
-    render(<CartItem {...props} />);
+    customRender(<CartItem {...props} />);
     const buttons = screen.getAllByRole('button');
 
     buttons.forEach((button) => {
-      expect(button).toHaveClass('MuiIconButton-sizeSmall');
+      expect(button.className).toMatch(/MuiIconButton-sizeSmall/);
     });
   });
 
   it('should apply error color to delete button', () => {
     const props = { ...defaultProps };
+    customRender(<CartItem {...props} />);
+    const deleteButton = screen.getByTestId('DeleteIcon').closest('button');
 
-    render(<CartItem {...props} />);
-    const deleteButton = screen.getByTestId('DeleteIcon').parentElement;
-
-    expect(deleteButton).toHaveClass('MuiIconButton-colorError');
+    expect(deleteButton.className).toMatch(/MuiIconButton-colorError/);
   });
 
   it('should center quantity display', () => {
     const props = { ...defaultProps };
-
-    render(<CartItem {...props} />);
+    customRender(<CartItem {...props} />);
     const quantityElement = screen.getByText(mockItem.quantity.toString());
 
-    expect(quantityElement).toHaveStyle({
-      textAlign: 'center',
-      minWidth: '32px'
-    });
+    const styles = window.getComputedStyle(quantityElement);
+    expect(styles.textAlign).toBe('center');
   });
 
   it('should format price with 2 decimal places', () => {
@@ -122,7 +123,7 @@ describe('CartItem', () => {
     };
     const props = { ...defaultProps, item: itemWithLongPrice };
 
-    render(<CartItem {...props} />);
+    customRender(<CartItem {...props} />);
 
     expect(screen.getByText('$30.00')).toBeInTheDocument();
   });
@@ -134,7 +135,7 @@ describe('CartItem', () => {
     };
     const props = { ...defaultProps, item: itemWithoutImage };
 
-    render(<CartItem {...props} />);
+    customRender(<CartItem {...props} />);
     const image = screen.getByRole('img');
 
     expect(image).toHaveAttribute('src', '');

@@ -6,9 +6,10 @@ import { Add as AddIcon, Remove as RemoveIcon, Delete as DeleteIcon } from '@mui
 const CartItem = ({ item, onIncrement, onDecrement, onRemove }) => (
   <Box
     sx={{
-      py: 3,
+      py: { xs: 2, sm: 3 },
+      px: { xs: 1, sm: 0 },
       display: 'flex',
-      gap: 3
+      gap: { xs: 2, sm: 3 }
     }}
   >
     <Box
@@ -16,10 +17,11 @@ const CartItem = ({ item, onIncrement, onDecrement, onRemove }) => (
       src={item.image}
       alt={item.name}
       sx={{
-        width: '80px',
-        height: '80px',
+        width: { xs: '60px', sm: '80px' },
+        height: { xs: '60px', sm: '80px' },
         objectFit: 'cover',
-        borderRadius: 2
+        borderRadius: 2,
+        flexShrink: 0
       }}
     />
 
@@ -28,21 +30,40 @@ const CartItem = ({ item, onIncrement, onDecrement, onRemove }) => (
         flexGrow: 1,
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        minWidth: 0
       }}
     >
       <Box
         sx={{
           display: 'flex',
           justifyContent: 'space-between',
-          alignItems: 'flex-start'
+          alignItems: { xs: 'center', sm: 'flex-start' },
+          flexWrap: { xs: 'wrap', sm: 'nowrap' },
+          gap: { xs: 1, sm: 2 }
         }}
       >
-        <Box>
-          <Typography variant="h6" sx={{ fontWeight: 500 }}>
+        <Box sx={{ minWidth: 0, flex: 1 }}>
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: 500,
+              fontSize: { xs: '0.9rem', sm: '1.25rem' },
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis'
+            }}
+          >
             {item.name}
           </Typography>
-          <Typography variant="h5" sx={{ mt: 1, fontWeight: 500 }}>
+          <Typography
+            variant="h5"
+            sx={{
+              mt: 0.5,
+              fontWeight: 500,
+              fontSize: { xs: '1rem', sm: '1.5rem' }
+            }}
+          >
             ${item.price.toFixed(2)}
           </Typography>
         </Box>
@@ -51,7 +72,8 @@ const CartItem = ({ item, onIncrement, onDecrement, onRemove }) => (
           sx={{
             display: 'flex',
             alignItems: 'center',
-            gap: 1
+            gap: { xs: 0.5, sm: 1 },
+            flexShrink: 0
           }}
         >
           <IconButton
@@ -59,18 +81,20 @@ const CartItem = ({ item, onIncrement, onDecrement, onRemove }) => (
             size="small"
             sx={{
               color: 'action.active',
+              padding: { xs: '4px', sm: '8px' },
               '&:hover': {
                 color: 'primary.main',
                 bgcolor: 'primary.lighter'
               }
             }}
           >
-            <RemoveIcon />
+            <RemoveIcon sx={{ fontSize: { xs: '1.1rem', sm: '1.25rem' } }} />
           </IconButton>
           <Typography
             sx={{
-              minWidth: '32px',
-              textAlign: 'center'
+              minWidth: { xs: '24px', sm: '32px' },
+              textAlign: 'center',
+              fontSize: { xs: '0.9rem', sm: '1rem' }
             }}
           >
             {item.quantity}
@@ -80,26 +104,28 @@ const CartItem = ({ item, onIncrement, onDecrement, onRemove }) => (
             size="small"
             sx={{
               color: 'action.active',
+              padding: { xs: '4px', sm: '8px' },
               '&:hover': {
                 color: 'primary.main',
                 bgcolor: 'primary.lighter'
               }
             }}
           >
-            <AddIcon />
+            <AddIcon sx={{ fontSize: { xs: '1.1rem', sm: '1.25rem' } }} />
           </IconButton>
           <IconButton
             onClick={onRemove}
             size="small"
             color="error"
             sx={{
-              ml: 2,
+              ml: { xs: 1, sm: 2 },
+              padding: { xs: '4px', sm: '8px' },
               '&:hover': {
                 bgcolor: 'error.lighter'
               }
             }}
           >
-            <DeleteIcon />
+            <DeleteIcon sx={{ fontSize: { xs: '1.1rem', sm: '1.25rem' } }} />
           </IconButton>
         </Box>
       </Box>
